@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1B4F8C" stop-opacity="0.22" />
+      <stop offset="55%" stop-color="#141414" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#080808" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="bottleBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="20%" stop-color="#282828" />
+      <stop offset="45%" stop-color="#3c3c3c" />
+      <stop offset="55%" stop-color="#1c1c1c" />
+      <stop offset="85%" stop-color="#2c2c2c" />
+      <stop offset="100%" stop-color="#0c0c0c" />
+    </linearGradient>
+    <linearGradient id="labelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181818" />
+      <stop offset="50%" stop-color="#101010" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0" />
+      <stop offset="35%" stop-color="#fff" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="brandAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B4F8C" />
+      <stop offset="100%" stop-color="#0A254A" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#000" flood-opacity="0.8" />
+    </filter>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#000" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGlow)" />
+
+  <!-- Studio Grid Texture -->
+  <g opacity="0.05" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="450" x2="600" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+  </g>
+
+  <!-- Floor Pedestal Reflection / Shadow -->
+  <ellipse cx="300" cy="520" rx="140" ry="28" fill="url(#floorShadow)" />
+  <ellipse cx="300" cy="515" rx="110" ry="12" fill="#1B4F8C" opacity="0.2" />
+
+  <!-- Main Container / Bottle with Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Bottle Silhouette -->
+    
+      <!-- Tall Bottle / Canister Body -->
+      <path d="M 255 200 Q 300 190 345 200 L 360 230 L 360 490 Q 300 515 240 490 L 240 230 Z" fill="url(#bottleBody)" stroke="#383838" stroke-width="2" />
+      <path d="M 255 200 Q 300 190 345 200 L 360 230 L 360 490 Q 300 515 240 490 L 240 230 Z" fill="url(#sheen)" />
+
+      <!-- Label Body Section -->
+      <rect x="245" y="240" width="110" height="235" rx="6" fill="url(#labelGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      
+      <!-- Accent stripes on label -->
+      <rect x="245" y="240" width="110" height="10" fill="url(#brandAccent)" />
+      <rect x="245" y="465" width="110" height="10" fill="url(#brandAccent)" />
+    
+
+    <!-- Nozzle / Head -->
+    
+      <!-- Bottle Neck & Cap -->
+      <rect x="282" y="120" width="36" height="40" rx="4" fill="#1B4F8C" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+      <line x1="282" y1="130" x2="318" y2="130" stroke="rgba(0,0,0,0.4)" stroke-width="2"/>
+      <line x1="282" y1="140" x2="318" y2="140" stroke="rgba(0,0,0,0.4)" stroke-width="2"/>
+      <line x1="282" y1="150" x2="318" y2="150" stroke="rgba(0,0,0,0.4)" stroke-width="2"/>
+      <path d="M 275 160 L 325 160 L 340 210 L 260 210 Z" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+    
+
+    <!-- Label Content -->
+    <g text-anchor="middle">
+      <!-- 4M Brand Badge -->
+      <polygon points="300,265 315,274 315,292 300,301 285,292 285,274" fill="#1B4F8C" />
+      <text x="300" y="288" font-family="'Rajdhani', 'Impact', sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1">4M</text>
+      
+      <text x="300" y="318" font-family="'Rajdhani', 'Arial Black', sans-serif" font-size="10" font-weight="800" fill="#fff" letter-spacing="2.5">AUTOTECH</text>
+      <text x="300" y="328" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#1B4F8C" letter-spacing="1.5">PRO FORMULA</text>
+
+      <!-- Divider line -->
+      <line x1="260" y1="336" x2="340" y2="336" stroke="#1B4F8C" stroke-width="1.5" opacity="0.8" />
+
+      <!-- Product Title on Label -->
+      <text x="300" y="360" font-family="'Rajdhani', 'Arial Black', sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1">HEADLIGHT</text>
+      <text x="300" y="375" font-family="'Rajdhani', 'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="1">CLEANER</text>
+      
+      <!-- Subtitle -->
+      <text x="300" y="400" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#bbb" letter-spacing="0.8">RESTORATION FORMULA</text>
+
+      <!-- Spec Badges -->
+      <rect x="260" y="420" width="80" height="18" rx="3" fill="#1e1e1e" stroke="#1B4F8C" stroke-width="1" />
+      <text x="300" y="433" font-family="'Rajdhani', sans-serif" font-size="9" font-weight="700" fill="#1B4F8C" letter-spacing="1.5">250 ML • PREMIUM</text>
+
+      <text x="300" y="455" font-family="'Inter', sans-serif" font-size="6" font-weight="500" fill="#777" letter-spacing="1">KGN CAR DETAILING</text>
+    </g>
+  </g>
+
+  <!-- Ambient Light Sparks / Particles -->
+  <circle cx="200" cy="180" r="2" fill="#1B4F8C" opacity="0.6" />
+  <circle cx="410" cy="220" r="2.5" fill="#1B4F8C" opacity="0.8" />
+  <circle cx="180" cy="400" r="1.5" fill="#fff" opacity="0.4" />
+  <circle cx="430" cy="380" r="2" fill="#fff" opacity="0.5" />
+</svg>

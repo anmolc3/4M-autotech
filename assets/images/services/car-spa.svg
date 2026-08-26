@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="servGrad_carspa" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#D71920" stop-opacity="0.38" />
+      <stop offset="55%" stop-color="#141414" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#060606" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="accentLine_carspa" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D71920" stop-opacity="0" />
+      <stop offset="50%" stop-color="#E6A817" stop-opacity="1" />
+      <stop offset="100%" stop-color="#D71920" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#servGrad_carspa)" />
+
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1.5" fill="none">
+    <path d="M 80 340 L 220 340 Q 280 230 420 230 Q 560 230 640 280 L 720 340" />
+    <circle cx="230" cy="340" r="45" />
+    <circle cx="630" cy="340" r="45" />
+    <line x1="0" y1="385" x2="800" y2="385" />
+  </g>
+
+  <line x1="80" y1="380" x2="720" y2="380" stroke="url(#accentLine_carspa)" stroke-width="3" />
+
+  <!-- Luxury Crown Star Badge -->
+  <g id="centerGraphic">
+    <circle cx="400" cy="175" r="70" fill="#200a0a" stroke="#D71920" stroke-width="3.5" />
+    <polygon points="400,115 415,150 452,150 422,172 433,207 400,185 367,207 378,172 348,150 385,150" fill="#E6A817" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="400" cy="175" r="86" fill="none" stroke="#E6A817" stroke-width="1.5" stroke-dasharray="6 4" />
+  </g>
+
+  <g text-anchor="middle">
+    <text x="400" y="52" font-family="&apos;Rajdhani&apos;, &apos;Arial Black&apos;, sans-serif" font-size="14" font-weight="900" fill="#E6A817" letter-spacing="4">4M AUTOTECH • SIGNATURE SUITE</text>
+    <text x="400" y="295" font-family="&apos;Rajdhani&apos;, &apos;Impact&apos;, sans-serif" font-size="30" font-weight="900" fill="#ffffff" letter-spacing="2">THE CAR SPA PACKAGE</text>
+    <text x="400" y="322" font-family="&apos;Rajdhani&apos;, sans-serif" font-size="14" font-weight="800" fill="#E6A817" letter-spacing="2.5">THE ULTIMATE 360° ALL-INCLUSIVE FULL DETAILING</text>
+    <text x="400" y="348" font-family="&apos;Inter&apos;, sans-serif" font-size="12" font-weight="500" fill="#bbbbbb" letter-spacing="0.5">Exterior Polish • Interior Sanitization • Engine Bay • 9H Protection Seal</text>
+    
+    <rect x="310" y="398" width="180" height="24" rx="12" fill="#181818" stroke="#E6A817" stroke-width="1.2" />
+    <text x="400" y="414" font-family="&apos;Rajdhani&apos;, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="2">100% SHOWROOM FINISH</text>
+  </g>
+</svg>

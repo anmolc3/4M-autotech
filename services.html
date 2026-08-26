@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — 4M AUTOTECH | Professional Car Detailing</title>
+    <meta name="description" content="Expert car detailing services in New Delhi — paint correction, ceramic coating, PPF, interior cleaning, Car Spa package and more. Book now.">
+    <link rel="canonical" href="https://www.khawajagaribnawazcardetailing.com/services.html">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-detail {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--card-radius);
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 24px;
+            transition: border-color var(--transition);
+        }
+        .service-detail:hover { border-color: rgba(215,25,32,0.2); }
+        .service-detail__image {
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--surface);
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .service-detail__image img { width:100%;height:100%;object-fit:cover;filter:brightness(0.75); }
+        .service-detail__placeholder {
+            font-size: 5rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .service-detail__icon-svg {
+            width: 48px;
+            height: 48px;
+            color: var(--red);
+            margin-bottom: 12px;
+        }
+        .service-detail__name {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .service-detail__desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 24px;
+        }
+        .service-detail__features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 28px;
+        }
+        .service-detail__feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        .service-detail__feature-check {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            color: var(--red);
+        }
+        .service-detail__footer { display: flex; gap: 12px; flex-wrap: wrap; }
+        @media (max-width: 768px) {
+            .service-detail { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+            .service-detail__features { grid-template-columns: 1fr; }
+        }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0;
+        }
+        .process-step {
+            padding: 32px 24px;
+            border-right: 1px solid var(--border);
+        }
+        .process-step:last-child { border-right: none; }
+        .process-step__num {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            color: var(--red-light);
+            line-height: 1;
+            margin-bottom: 12px;
+            border-bottom: 2px solid var(--red);
+            width: fit-content;
+            padding-bottom: 4px;
+        }
+        .process-step__title {
+            font-family: var(--font-heading);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .process-step__desc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.65; }
+    </style>
+</head>
+<body>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="nav" id="main-nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="nav__logo" id="nav-logo">
+                    <div class="nav__logo-mark">4M</div>
+                    <div class="nav__logo-text">
+                        <span class="nav__logo-name">4M Autotech</span>
+                        <span class="nav__logo-sub">Car Care Specialists</span>
+                    </div>
+                </a>
+                <ul class="nav__links">
+                    <li><a href="index.html" class="nav__link" id="nav-home">Home</a></li>
+                    <li><a href="products.html" class="nav__link" id="nav-products">Products</a></li>
+                    <li><a href="services.html" class="nav__link active" id="nav-services">Services</a></li>
+                    <li><a href="contact.html" class="nav__link" id="nav-contact">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="nav__cta" id="nav-enquire">Enquire Now</a>
+                <div class="nav__hamburger" id="hamburger" role="button" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="index.html" class="nav__link" id="mob-home">Home</a>
+            <a href="products.html" class="nav__link" id="mob-products">Products</a>
+            <a href="services.html" class="nav__link active" id="mob-services">Services</a>
+            <a href="contact.html" class="nav__link" id="mob-contact">Contact</a>
+            <a href="contact.html" class="btn btn--primary btn--sm" id="mob-enquire">Enquire Now</a>
+        </div>
+    </nav>
+
+    <!-- ====== PAGE HERO ====== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <span class="page-hero__label">Khawaja Garib Nawaz Car Detailing</span>
+                <h1 class="page-hero__title">Our <span>Services</span></h1>
+                <p class="page-hero__sub">
+                    From paint correction to ceramic coatings — professional detailing services delivered by experts in New Delhi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SERVICES SECTION ====== -->
+    <section class="section" id="services-section">
+        <div class="container">
+            <div class="filter-bar" id="services-filter-bar" role="tablist"></div>
+            <div id="services-list"></div>
+        </div>
+    </section>
+
+    <!-- ====== CAR SPA SECTION ====== -->
+    <section class="section car-spa" id="car-spa">
+        <div class="container">
+            <div class="section-header section-header--center fade-in">
+                <span class="section-label">Featured Package</span>
+                <h2 class="section-title">The <span>Car Spa</span></h2>
+                <div class="divider divider--center"></div>
+                <p class="section-subtitle" style="text-align:center;margin:16px auto 0;">
+                    The ultimate all-in-one detailing package for a showroom finish inside and out.
+                </p>
+            </div>
+            <div class="car-spa__featured fade-in">
+                <div class="car-spa__inner">
+                    <div class="car-spa__left" id="car-spa-left"></div>
+                    <div class="car-spa__right" id="car-spa-right"></div>
+                </div>
+            </div>
+            <div class="section-header fade-in" style="margin-top:60px;margin-bottom:32px;">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2.2rem)">Our <span>Process</span></h2>
+            </div>
+            <div class="process-steps" id="process-steps" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--card-radius);overflow:hidden;"></div>
+        </div>
+    </section>
+
+    <!-- ====== CTA STRIP ====== -->
+    <section class="cta-strip" id="cta-strip">
+        <div class="container">
+            <div class="cta-strip__inner">
+                <div class="cta-strip__text">
+                    <span class="section-label">Book A Service</span>
+                    <div class="cta-strip__title">Ready To Transform<br>Your Vehicle?</div>
+                </div>
+                <div class="cta-strip__actions">
+                    <a id="cta-whatsapp" href="#" class="btn btn--whatsapp">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp Us
+                    </a>
+                    <a id="cta-call" href="#" class="btn" style="background:#fff;color:#D71920;font-family:var(--font-heading);font-weight:600;letter-spacing:2px;gap:8px;">
+                        <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .74h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo-name">4M Autotech</div>
+                    <span class="footer__logo-sub">Khawaja Garib Nawaz Car Detailing</span>
+                    <p class="footer__tagline">Professional car detailing services and premium car care products.</p>
+                </div>
+                <div>
+                    <div class="footer__col-title">Quick Links</div>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="products.html" class="footer__link">Products</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Services</div>
+                    <ul class="footer__links" id="footer-services-list"></ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Contact</div>
+                    <div class="footer__contact-list" id="footer-contact-list"></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright" id="footer-copyright"></div>
+                <div class="footer__gst" id="footer-gst"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/icons.js"></script>
+    <script>
+    (function() {
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobile-nav').classList.toggle('open');
+        });
+
+        document.getElementById('cta-whatsapp').href = whatsappUrl(SITE_CONFIG.waMessages.services);
+        document.getElementById('cta-call').href = callUrl();
+
+        // SVG icons for services
+        const serviceIconMap = {
+            'paint-correction':    ICONS.droplets,
+            'ceramic-coating':     ICONS.shield,
+            'ppf':                 ICONS.shield,
+            'interior-cleaning':   ICONS.star,
+            'exterior-detailing':  ICONS.car,
+            'engine-bay-cleaning': ICONS.zap,
+            'car-spa':             ICONS.star
+        };
+
+        const checkSvg = `<svg class="service-detail__feature-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+        const waSvg = `<svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+        const phoneSvg = `<svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .74h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>`;
+
+        // ---- FILTER BAR ----
+        let activeCategory = 'all';
+        const filterBar = document.getElementById('services-filter-bar');
+        SERVICE_CATEGORIES.forEach(cat => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn' + (cat.id === 'all' ? ' active' : '');
+            btn.textContent = cat.label;
+            btn.id = `svc-filter-${cat.id}`;
+            btn.addEventListener('click', () => {
+                activeCategory = cat.id;
+                filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderServices();
+            });
+            filterBar.appendChild(btn);
+        });
+
+        const servicesList = document.getElementById('services-list');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.05 });
+
+        function renderServices() {
+            const filtered = activeCategory === 'all' ? SERVICES : SERVICES.filter(s => s.category === activeCategory);
+            servicesList.innerHTML = '';
+            filtered.forEach(s => {
+                const svgIcon = serviceIconMap[s.id] || ICONS.car;
+                const el = document.createElement('div');
+                el.className = 'service-detail fade-in';
+                el.id = s.id;
+                el.innerHTML = `
+                    <div class="service-detail__image">
+                        <img src="${s.image}" alt="${s.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="service-detail__placeholder" style="display:none;background:${s.imagePlaceholder};">
+                            <svg style="width:80px;height:80px;color:rgba(255,255,255,0.15)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">${svgIcon.match(/<path[^>]+>|<polygon[^>]+>|<polyline[^>]+>|<circle[^>]+>|<line[^>]+>/g)?.join('') || ''}</svg>
+                        </div>
+                    </div>
+                    <div class="service-detail__body">
+                        <div class="service-detail__icon-svg" style="width:44px;height:44px;color:var(--red)">${svgIcon}</div>
+                        <h2 class="service-detail__name">${s.name}</h2>
+                        <p class="service-detail__desc">${s.description}</p>
+                        <div class="service-detail__features">
+                            ${s.features.map(f => `<div class="service-detail__feature">${checkSvg}${f}</div>`).join('')}
+                        </div>
+                        <div class="service-detail__footer">
+                            <a href="${whatsappUrl(SITE_CONFIG.waMessages.services)}" class="btn btn--primary btn--sm">${waSvg} Enquire on WhatsApp</a>
+                            <a href="${callUrl()}" class="btn btn--outline btn--sm">${phoneSvg} Call Now</a>
+                        </div>
+                    </div>
+                `;
+                servicesList.appendChild(el);
+                observer.observe(el);
+            });
+        }
+        renderServices();
+
+        const hash = window.location.hash.slice(1);
+        if (hash) setTimeout(() => { const el = document.getElementById(hash); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 400);
+
+        // ---- CAR SPA ----
+        const pkg = CAR_SPA_PACKAGE;
+        document.getElementById('car-spa-left').innerHTML = `
+            <div style="margin-bottom:20px;border-radius:12px;overflow:hidden;border:1px solid rgba(215,25,32,0.3);box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+                <img src="assets/images/services/car-spa.svg" alt="Car Spa Full Package" style="width:100%;height:auto;display:block;">
+            </div>
+            <span class="car-spa__label">
+                <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Featured Package
+            </span>
+            <div class="car-spa__title">${pkg.name}</div>
+            <div class="car-spa__tagline">${pkg.tagline}</div>
+            <p class="car-spa__desc">${pkg.description}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
+                ${pkg.benefits.map(b => `<span class="tag" style="color:var(--gold);border-color:rgba(230,168,23,0.2);background:rgba(230,168,23,0.06)">
+                    <svg style="width:10px;height:10px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    ${b}
+                </span>`).join('')}
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                <a href="${whatsappUrl(SITE_CONFIG.waMessages.carSpa)}" class="btn btn--whatsapp">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Book Car Spa
+                </a>
+                <a href="${callUrl()}" class="btn btn--outline">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .74h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call Now
+                </a>
+            </div>
+        `;
+        document.getElementById('car-spa-right').innerHTML = pkg.sections.map(sec => `
+            <div class="car-spa__section">
+                <div class="car-spa__section-header">
+                    <span class="car-spa__section-icon" style="color:var(--red);display:inline-flex;align-items:center;">${icon(sec.icon, '20px')}</span>
+                    <span class="car-spa__section-title">${sec.title}</span>
+                </div>
+                <div class="car-spa__items">
+                    ${sec.items.map(item => `<span class="car-spa__item">${item}</span>`).join('')}
+                </div>
+            </div>
+        `).join('');
+
+        // ---- PROCESS STEPS ----
+        document.getElementById('process-steps').innerHTML = pkg.process.map(p => `
+            <div class="process-step fade-in">
+                <div class="process-step__num">${p.step}</div>
+                <div class="process-step__title">${p.title}</div>
+                <div class="process-step__desc">${p.desc}</div>
+            </div>
+        `).join('');
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // ---- FOOTER ----
+        SERVICES.forEach(s => {
+            document.getElementById('footer-services-list').innerHTML += `<li><a href="#${s.id}" class="footer__link">${s.name}</a></li>`;
+        });
+        document.getElementById('footer-contact-list').innerHTML = `
+            <div class="footer__contact-item">${icon('phone','16px')}<a href="${callUrl()}">${SITE_CONFIG.phoneDisplay}</a></div>
+            <div class="footer__contact-item">${icon('email','16px')}<a href="mailto:${SITE_CONFIG.email}">${SITE_CONFIG.email}</a></div>
+            <div class="footer__contact-item">${icon('location','16px')}<span>${SITE_CONFIG.address.replace(/\n/g, ', ')}</span></div>
+        `;
+        document.getElementById('footer-copyright').textContent = `© ${new Date().getFullYear()} 4M Autotech. All rights reserved.`;
+        document.getElementById('footer-gst').textContent = `GST: ${SITE_CONFIG.gst}`;
+    })();
+    </script>
+</body>
+</html>

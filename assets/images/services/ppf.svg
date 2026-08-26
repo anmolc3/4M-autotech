@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="servGrad_ppf" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#607D8B" stop-opacity="0.35" />
+      <stop offset="55%" stop-color="#121212" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#060606" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="accentLine_ppf" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#607D8B" stop-opacity="0" />
+      <stop offset="50%" stop-color="#607D8B" stop-opacity="1" />
+      <stop offset="100%" stop-color="#607D8B" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#servGrad_ppf)" />
+
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1.5" fill="none">
+    <path d="M 80 340 L 220 340 Q 280 230 420 230 Q 560 230 640 280 L 720 340" />
+    <circle cx="230" cy="340" r="45" />
+    <circle cx="630" cy="340" r="45" />
+    <line x1="0" y1="385" x2="800" y2="385" />
+  </g>
+
+  <line x1="80" y1="380" x2="720" y2="380" stroke="url(#accentLine_ppf)" stroke-width="3" />
+
+  <!-- PPF Hexagon Armor Graphic -->
+  <g id="centerGraphic">
+    <polygon points="400,105 470,145 470,225 400,265 330,225 330,145" fill="#1c2833" stroke="#607D8B" stroke-width="3.5" />
+    <polygon points="400,120 455,152 455,218 400,250 345,218 345,152" fill="#607d8b" opacity="0.25" />
+    <path d="M 330 185 Q 400 140 470 185" stroke="#00e676" stroke-width="3.5" fill="none" stroke-dasharray="6 4" />
+    <text x="400" y="195" font-family="&apos;Rajdhani&apos;, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">PPF</text>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="400" y="52" font-family="&apos;Rajdhani&apos;, &apos;Arial Black&apos;, sans-serif" font-size="14" font-weight="900" fill="#607D8B" letter-spacing="4">4M AUTOTECH • DETAILING STUDIO</text>
+    <text x="400" y="295" font-family="&apos;Rajdhani&apos;, &apos;Impact&apos;, sans-serif" font-size="30" font-weight="900" fill="#ffffff" letter-spacing="2">PAINT PROTECTION FILM (PPF)</text>
+    <text x="400" y="322" font-family="&apos;Rajdhani&apos;, sans-serif" font-size="14" font-weight="800" fill="#607D8B" letter-spacing="2.5">SELF-HEALING URETHANE ARMOR</text>
+    <text x="400" y="348" font-family="&apos;Inter&apos;, sans-serif" font-size="12" font-weight="500" fill="#bbbbbb" letter-spacing="0.5">Stone Chip &amp; Road Debris Protection • Invisible High Gloss Finish</text>
+    
+    <rect x="310" y="398" width="180" height="24" rx="12" fill="#181818" stroke="#607D8B" stroke-width="1.2" />
+    <text x="400" y="414" font-family="&apos;Rajdhani&apos;, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="2">100% QUALITY GUARANTEED</text>
+  </g>
+</svg>

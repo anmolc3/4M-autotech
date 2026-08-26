@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — 4M AUTOTECH | Premium Car Care Products</title>
+    <meta name="description" content="Shop 4M AUTOTECH premium car care products — fuel additives, tyre polish, foam wash, dashboard polish, seat cleaners and more. Professional-grade formulas.">
+    <link rel="canonical" href="https://www.khawajagaribnawazcardetailing.com/products.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="nav" id="main-nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="nav__logo" id="nav-logo">
+                    <div class="nav__logo-mark">4M</div>
+                    <div class="nav__logo-text">
+                        <span class="nav__logo-name">4M Autotech</span>
+                        <span class="nav__logo-sub">Car Care Specialists</span>
+                    </div>
+                </a>
+                <ul class="nav__links">
+                    <li><a href="index.html" class="nav__link" id="nav-home">Home</a></li>
+                    <li><a href="products.html" class="nav__link active" id="nav-products">Products</a></li>
+                    <li><a href="services.html" class="nav__link" id="nav-services">Services</a></li>
+                    <li><a href="contact.html" class="nav__link" id="nav-contact">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="nav__cta" id="nav-enquire">Enquire Now</a>
+                <div class="nav__hamburger" id="hamburger" role="button" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="index.html" class="nav__link" id="mob-home">Home</a>
+            <a href="products.html" class="nav__link active" id="mob-products">Products</a>
+            <a href="services.html" class="nav__link" id="mob-services">Services</a>
+            <a href="contact.html" class="nav__link" id="mob-contact">Contact</a>
+            <a href="contact.html" class="btn btn--primary btn--sm" id="mob-enquire">Enquire Now</a>
+        </div>
+    </nav>
+
+    <!-- ====== PAGE HERO ====== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <span class="page-hero__label">4M Autotech</span>
+                <h1 class="page-hero__title">Our <span>Products</span></h1>
+                <p class="page-hero__sub">
+                    Professional-grade car care formulas for every need — engine, exterior, interior and protection.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PRODUCTS SECTION ====== -->
+    <section class="section" id="products-section">
+        <div class="container">
+            <div class="filter-bar" id="product-filter-bar" role="tablist"></div>
+            <div style="margin-bottom:24px;">
+                <span id="products-count" style="font-family:var(--font-heading);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted)"></span>
+            </div>
+            <div class="products-grid" id="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- ====== PRODUCT MODAL ====== -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-product-name">
+        <div class="modal" id="modal">
+            <button class="modal__close" id="modal-close" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal__grid">
+                <div class="modal__image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal__content">
+                    <div>
+                        <div class="modal__category" id="modal-category"></div>
+                        <div class="modal__name" id="modal-product-name"></div>
+                        <div class="modal__subtitle" id="modal-subtitle"></div>
+                        <div class="modal__tagline" id="modal-tagline"></div>
+                    </div>
+                    <div class="modal__price-block">
+                        <div>
+                            <div class="modal__price" id="modal-price"></div>
+                            <div class="modal__price-note" id="modal-price-note"></div>
+                        </div>
+                        <span class="modal__size-badge" id="modal-size"></span>
+                    </div>
+                    <div class="modal__desc" id="modal-desc"></div>
+                    <div>
+                        <div class="modal__section-title">Key Benefits</div>
+                        <div class="modal__benefits" id="modal-benefits"></div>
+                    </div>
+                    <div>
+                        <div class="modal__section-title">How To Use</div>
+                        <div class="modal__steps" id="modal-steps"></div>
+                    </div>
+                    <div class="modal__actions">
+                        <a id="modal-whatsapp" href="#" class="btn btn--whatsapp btn--sm">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp Enquiry
+                        </a>
+                        <a id="modal-call" href="#" class="btn btn--outline btn--sm">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .74h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== CTA STRIP ====== -->
+    <section class="cta-strip" id="cta-strip">
+        <div class="container">
+            <div class="cta-strip__inner">
+                <div class="cta-strip__text">
+                    <span class="section-label">Get In Touch</span>
+                    <div class="cta-strip__title">Need Help Choosing<br>The Right Product?</div>
+                </div>
+                <div class="cta-strip__actions">
+                    <a id="cta-whatsapp" href="#" class="btn btn--whatsapp">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp Us
+                    </a>
+                    <a id="cta-call" href="#" class="btn" style="background:#fff;color:#D71920;font-family:var(--font-heading);font-weight:600;letter-spacing:2px;gap:8px;">
+                        <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .74h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo-name">4M Autotech</div>
+                    <span class="footer__logo-sub">Khawaja Garib Nawaz Car Detailing</span>
+                    <p class="footer__tagline">Premium car care products and professional detailing services.</p>
+                </div>
+                <div>
+                    <div class="footer__col-title">Quick Links</div>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="products.html" class="footer__link">Products</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Services</div>
+                    <ul class="footer__links" id="footer-services-list"></ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Contact</div>
+                    <div class="footer__contact-list" id="footer-contact-list"></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright" id="footer-copyright"></div>
+                <div class="footer__gst" id="footer-gst"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/icons.js"></script>
+    <script>
+    (function() {
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobile-nav').classList.toggle('open');
+        });
+
+        document.getElementById('cta-whatsapp').href = whatsappUrl(SITE_CONFIG.waMessages.general);
+        document.getElementById('cta-call').href = callUrl();
+
+        // ---- FILTER BAR ----
+        let activeCategory = 'all';
+        const filterBar = document.getElementById('product-filter-bar');
+        PRODUCT_CATEGORIES.forEach(cat => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn' + (cat.id === 'all' ? ' active' : '');
+            btn.textContent = cat.label;
+            btn.dataset.category = cat.id;
+            btn.id = `filter-${cat.id}`;
+            btn.addEventListener('click', () => {
+                activeCategory = cat.id;
+                filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderProducts();
+            });
+            filterBar.appendChild(btn);
+        });
+
+        const grid = document.getElementById('products-grid');
+        const countEl = document.getElementById('products-count');
+        const arrowSvg = `<svg style="width:12px;height:12px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
+
+        function renderProducts() {
+            const filtered = activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category.includes(activeCategory));
+            countEl.textContent = `${filtered.length} Product${filtered.length !== 1 ? 's' : ''}`;
+            grid.innerHTML = '';
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card fade-in';
+                card.id = `product-card-${p.id}`;
+                card.setAttribute('role', 'button');
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('aria-label', `View ${p.name} details`);
+                card.innerHTML = `
+                    <div class="product-card__image" style="background:${p.imagePlaceholder}22">
+                        <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="product-card__image-placeholder" style="display:none;background:${p.imagePlaceholder}22;color:${p.accentColor}">${p.name.substring(0,2).toUpperCase()}</div>
+                        ${p.size ? `<span class="product-card__badge">${p.size}</span>` : ''}
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__category">${p.categoryLabel}</div>
+                        <div class="product-card__name">${p.name}</div>
+                        <div class="product-card__subtitle">${p.subtitle}</div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">${p.mrp || '<span class="coming-soon">Enquire for price</span>'}</div>
+                            <span class="product-card__cta" style="color:${p.accentColor}">Details ${arrowSvg}</span>
+                        </div>
+                    </div>
+                `;
+                card.addEventListener('click', () => openModal(p));
+                card.addEventListener('keydown', e => { if (e.key === 'Enter') openModal(p); });
+                grid.appendChild(card);
+            });
+            document.querySelectorAll('.fade-in:not(.visible)').forEach(el => observer.observe(el));
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+
+        // ---- MODAL ----
+        const overlay = document.getElementById('modal-overlay');
+
+        function openModal(p) {
+            document.getElementById('modal-category').textContent = p.categoryLabel;
+            document.getElementById('modal-product-name').textContent = p.name;
+            document.getElementById('modal-subtitle').textContent = p.subtitle;
+            document.getElementById('modal-tagline').textContent = p.tagline;
+            document.getElementById('modal-price').textContent = p.mrp || 'Enquire for price';
+            document.getElementById('modal-price-note').textContent = p.mrpNote || '';
+            document.getElementById('modal-size').textContent = p.size || '';
+            const img = document.getElementById('modal-img');
+            img.src = p.image;
+            img.alt = p.name;
+            document.getElementById('modal-desc').textContent = p.description;
+            document.getElementById('modal-benefits').innerHTML = p.benefits.map(b => `<div class="modal__benefit">${b}</div>`).join('');
+            document.getElementById('modal-steps').innerHTML = p.howToUse.map((s, i) => `
+                <div class="modal__step">
+                    <span class="modal__step-num">${i + 1}</span>
+                    <span>${s}</span>
+                </div>
+            `).join('');
+            document.getElementById('modal-whatsapp').href = whatsappUrl(SITE_CONFIG.waMessages.productTemplate(p.name));
+            document.getElementById('modal-call').href = callUrl();
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('modal-close').addEventListener('click', closeModal);
+        overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        const params = new URLSearchParams(window.location.search);
+        const targetId = params.get('product');
+        renderProducts();
+        if (targetId) {
+            const target = PRODUCTS.find(p => p.id === targetId);
+            if (target) setTimeout(() => openModal(target), 300);
+        }
+
+        // ---- FOOTER ----
+        SERVICES.forEach(s => {
+            document.getElementById('footer-services-list').innerHTML += `<li><a href="services.html#${s.id}" class="footer__link">${s.name}</a></li>`;
+        });
+        document.getElementById('footer-contact-list').innerHTML = `
+            <div class="footer__contact-item">${icon('phone','16px')}<a href="${callUrl()}">${SITE_CONFIG.phoneDisplay}</a></div>
+            <div class="footer__contact-item">${icon('email','16px')}<a href="mailto:${SITE_CONFIG.email}">${SITE_CONFIG.email}</a></div>
+            <div class="footer__contact-item">${icon('location','16px')}<span>${SITE_CONFIG.address.replace(/\n/g, ', ')}</span></div>
+        `;
+        document.getElementById('footer-copyright').textContent = `© ${new Date().getFullYear()} 4M Autotech. All rights reserved.`;
+        document.getElementById('footer-gst').textContent = `GST: ${SITE_CONFIG.gst}`;
+    })();
+    </script>
+</body>
+</html>
