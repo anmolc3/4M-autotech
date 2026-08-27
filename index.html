@@ -54,44 +54,43 @@
         <div class="hero__content container">
             <div class="hero__badge">
                 <span class="hero__badge-dot"></span>
-                New Delhi's Premier Car Care
+                Cars &amp; Two-Wheelers • German Formulation Standards
             </div>
             <h1 class="hero__title">
-                <span class="small">Premium</span>
-                <em>4M</em>
-                Autotech
+                <span class="small">Precision Care For</span>
+                <em>Cars &amp; Bikes</em>
             </h1>
             <p class="hero__tagline" id="hero-tagline"></p>
             <p class="hero__desc">
-                Professional-grade car care products and expert detailing services.
-                From ceramic coatings to paint protection — we keep your vehicle in showroom condition.
+                Engineered automotive care chemicals &amp; doorstep detailing for 4-wheelers and 2-wheelers.
+                From ceramic paint protection and engine flushing to chain lubrication — keeping every ride in showroom glory.
             </p>
             <div class="hero__actions">
                 <a href="products.html" class="btn btn--primary btn--lg" id="hero-products-btn">
                     <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                    Shop Products
+                    Explore Products
                 </a>
-                <a href="services.html" class="btn btn--outline btn--lg" id="hero-services-btn">
-                    Our Services
+                <a href="home-service.html" class="btn btn--outline btn--lg" id="hero-homeservice-btn">
+                    Book Home Service
                     <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
             </div>
             <div class="hero__stats">
                 <div class="hero__stat" id="stat-products">
-                    <div class="hero__stat-num">18<span>+</span></div>
-                    <div class="hero__stat-label">Products</div>
+                    <div class="hero__stat-num">25<span>+</span></div>
+                    <div class="hero__stat-label">Car &amp; Bike Products</div>
                 </div>
                 <div class="hero__stat" id="stat-services">
-                    <div class="hero__stat-num">7<span>+</span></div>
-                    <div class="hero__stat-label">Services</div>
+                    <div class="hero__stat-num">Door<span>step</span></div>
+                    <div class="hero__stat-label">Home Service</div>
                 </div>
                 <div class="hero__stat" id="stat-quality">
                     <div class="hero__stat-num">100<span>%</span></div>
-                    <div class="hero__stat-label">Quality Assured</div>
+                    <div class="hero__stat-label">German Standard</div>
                 </div>
                 <div class="hero__stat" id="stat-warranty">
-                    <div class="hero__stat-num">Pro<span>.</span></div>
-                    <div class="hero__stat-label">Grade Formula</div>
+                    <div class="hero__stat-num">5.0<span>★</span></div>
+                    <div class="hero__stat-label">Customer Rating</div>
                 </div>
             </div>
         </div>
@@ -255,6 +254,9 @@
                     <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.parentElement.querySelector('.product-card__image-placeholder').style.display='flex'">
                     <div class="product-card__image-placeholder" style="display:none;background:${p.imagePlaceholder}22;color:${p.accentColor}">${p.name.substring(0,2).toUpperCase()}</div>
                     ${p.size ? `<span class="product-card__badge">${p.size}</span>` : ''}
+                    <span class="product-card__badge" style="right:12px;left:auto;background:rgba(215,25,32,0.85);color:#fff;border-color:rgba(255,255,255,0.2)">
+                        ${p.vehicleType === 'bike' ? '🏍️ BIKE' : (p.vehicleType === 'car' ? '🚗 CAR' : '🚗🏍️ ALL')}
+                    </span>
                 </div>
                 <div class="product-card__body">
                     <div class="product-card__category">${p.categoryLabel}</div>

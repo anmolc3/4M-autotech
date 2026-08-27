@@ -50,10 +50,10 @@
     <section class="page-hero">
         <div class="container">
             <div class="page-hero__content">
-                <span class="page-hero__label">4M Autotech</span>
-                <h1 class="page-hero__title">Our <span>Products</span></h1>
+                <span class="page-hero__label">German Formulation Standards</span>
+                <h1 class="page-hero__title">Car &amp; Bike <span>Products</span></h1>
                 <p class="page-hero__sub">
-                    Professional-grade car care formulas for every need — engine, exterior, interior and protection.
+                    Professional-grade formulations for 4-wheelers &amp; 2-wheelers — engine flushes, body polishes, chain lubricants, rust removers &amp; ceramic protection.
                 </p>
             </div>
         </div>
@@ -223,6 +223,9 @@
                         <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <div class="product-card__image-placeholder" style="display:none;background:${p.imagePlaceholder}22;color:${p.accentColor}">${p.name.substring(0,2).toUpperCase()}</div>
                         ${p.size ? `<span class="product-card__badge">${p.size}</span>` : ''}
+                        <span class="product-card__badge" style="right:12px;left:auto;background:rgba(215,25,32,0.85);color:#fff;border-color:rgba(255,255,255,0.2)">
+                            ${p.vehicleType === 'bike' ? '🏍️ BIKE' : (p.vehicleType === 'car' ? '🚗 CAR' : '🚗🏍️ ALL')}
+                        </span>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__category">${p.categoryLabel}</div>

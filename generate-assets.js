@@ -259,6 +259,94 @@ const products = [
     type: 'aerosol',
     iconText: 'HIGH SPEED • WATER RESISTANT',
     formula: 'PTFE CERAMIC COATING LUBE'
+  },
+  {
+    id: 'bike-body-polish',
+    name: 'BIKE BODY POLISH',
+    sub: 'PERFECT SHINE & PROTECTION',
+    color: '#7B1FA2',
+    colorDark: '#4A148C',
+    tag: '300 ML',
+    type: 'aerosol',
+    iconText: 'METALLIC & MATTE • NO SWIRLS',
+    formula: 'GERMAN SHINE FORMULA'
+  },
+  {
+    id: 'bike-engine-flushing',
+    name: 'BIKE ENGINE FLUSHING',
+    sub: 'DEEP ENGINE CLEAN IN 10 MINS',
+    color: '#2E7D32',
+    colorDark: '#1B5E20',
+    tag: '60 ML',
+    type: 'can',
+    iconText: '4-STROKE • REMOVE SLUDGE',
+    formula: 'GERMAN CARBON DISSOLVER'
+  },
+  {
+    id: 'bike-chain-lube',
+    name: 'BIKE CHAIN LUBE SPRAY',
+    sub: 'SUPERIOR LUBRICATION & O-RING SAFE',
+    color: '#D32F2F',
+    colorDark: '#B71C1C',
+    tag: '60 ML',
+    type: 'aerosol',
+    iconText: 'O/X/Z-RING • NO FLING',
+    formula: 'SYNTHETIC HIGH TACK'
+  },
+  {
+    id: 'monogram-cleaner',
+    name: 'MONOGRAM CLEANER SPRAY',
+    sub: 'ULTIMATE CLEANING & BRIGHT LOOK',
+    color: '#0288D1',
+    colorDark: '#01579B',
+    tag: '500 ML',
+    type: 'aerosol',
+    iconText: 'EMBLEMS • LOGOS • TYRE COVERS',
+    formula: 'DEEP LIFT SOLUTION'
+  },
+  {
+    id: 'brake-disc-cleaner',
+    name: 'BRAKE DISC & PARTS CLEANER',
+    sub: 'HIGH PERFORMANCE DEGREASER SPRAY',
+    color: '#C62828',
+    colorDark: '#8E0000',
+    tag: '600 ML',
+    type: 'aerosol',
+    iconText: 'DISCS • CALIPERS • PADS',
+    formula: 'FAST DRY RESIDUE-FREE'
+  },
+  {
+    id: 'bike-rust-mast',
+    name: 'BIKE RUST MAST',
+    sub: 'RUST LUBRICANT SPRAY & 360° VALVE',
+    color: '#E65100',
+    colorDark: '#BF360C',
+    tag: '60 ML',
+    type: 'aerosol',
+    iconText: 'LOOSEN RUST • STOPS SQUEAKS',
+    formula: '360° ALL ANGLE PENETRANT'
+  },
+  {
+    id: 'bike-teflon-coating',
+    name: 'BIKE TEFLON COATING',
+    sub: 'PREMIUM PROTECTIVE SPRAY',
+    color: '#1565C0',
+    colorDark: '#0D47A1',
+    tag: '60 ML',
+    type: 'aerosol',
+    iconText: 'SHINE • REPEL DUST & WATER',
+    formula: 'PTFE MOLECULAR SHIELD'
+  },
+  {
+    id: 'bike-chain-cleaner',
+    name: 'BIKE CHAIN CLEANER',
+    sub: 'SPRAY CHAIN CLEANER & DEGREASER',
+    color: '#00838F',
+    colorDark: '#006064',
+    tag: '60 ML',
+    type: 'aerosol',
+    iconText: 'DEEP CLEAN • FAST DRY',
+    formula: 'O-RING SAFE DEGREASER'
   }
 ];
 

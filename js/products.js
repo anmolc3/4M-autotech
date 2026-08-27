@@ -728,8 +728,9 @@ const PRODUCTS = [
         name: "Chain Lubricant",
         subtitle: "Synthetic Anti-Fling Chain Lube",
         tagline: "HIGH SPEED • NO FLING • WATERPROOF",
-        category: ["engine-care", "protection"],
-        categoryLabel: "Engine Care",
+        category: ["engine-care", "protection", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
         accentColor: "#FBC02D",
         accentLight: "rgba(251,192,45,0.15)",
         size: "300 ml",
@@ -755,17 +756,302 @@ const PRODUCTS = [
             "Shake well before each use.",
             "Store below 50°C."
         ]
+    },
+    {
+        id: "bike-body-polish",
+        name: "Bike Body Polish",
+        subtitle: "Perfect Shine & Protection",
+        tagline: "REMOVES SWIRLS • RESTORES ORIGINAL GLOSS • UV PROTECT",
+        category: ["exterior-care", "polish", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
+        accentColor: "#7B1FA2",
+        accentLight: "rgba(123,31,162,0.15)",
+        size: "300 ml",
+        image: "assets/images/products/bike-body-polish.svg",
+        imagePlaceholder: "#7B1FA2",
+        description: "4M Autotech Bike Body Polish is a premium German formula specially developed to eliminate swirl marks, light scratches, and oxidation while restoring depth and gloss on all motorcycle finishes.",
+        benefits: [
+            "Removes swirls & fine scratches",
+            "Restores showroom gloss & paint depth",
+            "Protects from UV rays, dust & road grime",
+            "Safe for metallic, gloss & matte bike paints",
+            "Smooth mirror-like hydrophobic finish"
+        ],
+        howToUse: [
+            "Wash and dry bike completely.",
+            "Shake well before use.",
+            "Apply small amount on applicator or microfiber cloth.",
+            "Spread evenly in circular motions.",
+            "Allow to dry to a light haze and buff to a deep shine."
+        ],
+        recommendedUse: "Sports bikes, Commuter bikes, Scooters, Cruiser bikes. All motorcycle paint surfaces.",
+        caution: [
+            "Do not apply on hot surfaces or in direct sunlight.",
+            "Do not apply on tyres, seats or brake parts.",
+            "Keep out of reach of children."
+        ]
+    },
+    {
+        id: "bike-engine-flushing",
+        name: "Bike Engine Flushing",
+        subtitle: "Deep Engine Clean in 10 Minutes",
+        tagline: "CLEAN ENGINE • SMOOTHER PICKUP • BETTER MILEAGE",
+        category: ["engine-care", "fuel-care", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
+        accentColor: "#2E7D32",
+        accentLight: "rgba(46,125,50,0.15)",
+        size: "60 ml",
+        image: "assets/images/products/bike-engine-flushing.svg",
+        imagePlaceholder: "#2E7D32",
+        description: "4M Autotech Bike Engine Flushing is a high-performance German formula designed to deeply clean internal 4-stroke motorcycle engine components, dissolving sludge, gum, carbon, and varnish deposits before oil change.",
+        benefits: [
+            "Removes sludge, carbon & varnish deposits in 10 mins",
+            "Cleans oil passages and piston galleries",
+            "Restores compression and improves engine pickup",
+            "Reduces friction, engine noise, and operating heat",
+            "Safe for catalytic converters & all 4T bike engines"
+        ],
+        howToUse: [
+            "Ride bike for 5-10 minutes to warm engine.",
+            "Switch off engine.",
+            "Add entire 60 ml bottle into old engine oil.",
+            "Start engine and let it idle for 8-10 minutes (do not rev).",
+            "Switch off engine, drain old oil completely, and replace with new oil & filter."
+        ],
+        recommendedUse: "Use every 3,000 – 4,000 km before engine oil change for all 4-stroke motorcycles & scooters.",
+        caution: [
+            "Do not use in 2-stroke engines.",
+            "Do not drive or rev bike while flushing is in engine.",
+            "Keep out of reach of children."
+        ]
+    },
+    {
+        id: "bike-chain-lube",
+        name: "Bike Chain Lubricant Spray",
+        subtitle: "Superior Drivetrain Lubrication",
+        tagline: "SUPERIOR LUBRICATION • MAXIMUM PROTECTION",
+        category: ["engine-care", "protection", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
+        accentColor: "#D32F2F",
+        accentLight: "rgba(211,47,47,0.15)",
+        size: "60 ml",
+        image: "assets/images/products/bike-chain-lube.svg",
+        imagePlaceholder: "#D32F2F",
+        description: "4M Autotech Bike Chain Lubricant Spray provides high-tack synthetic lubrication engineered to penetrate deep into pin bushings, preventing chain elongation and resisting water wash-off without messy fling.",
+        benefits: [
+            "Reduces friction & sprocket tooth wear",
+            "100% safe for O-Ring, X-Ring & Z-Ring chains",
+            "Water, dust & road grime repellent",
+            "Prevents rust and corrosive road salt attack",
+            "Ensures smooth, quieter power transmission"
+        ],
+        howToUse: [
+            "Clean chain thoroughly with Chain Cleaner.",
+            "Shake can well before use.",
+            "Spray evenly on the inner rollers while rotating wheel.",
+            "Allow a few minutes for tack bonding before riding."
+        ],
+        recommendedUse: "Sports bikes, Commuters, Scooters, Cruisers, Off-road bikes. Apply every 500-800 km.",
+        caution: [
+            "Do not spray on brake discs, pads or tyre contact patches.",
+            "Aerosol under pressure."
+        ]
+    },
+    {
+        id: "monogram-cleaner",
+        name: "Monogram Cleaner Spray",
+        subtitle: "Ultimate Emblems & Logos Cleaner",
+        tagline: "CLEAN • RESTORE • PROTECT",
+        category: ["exterior-care", "cleaners", "car-care"],
+        categoryLabel: "Car Care",
+        vehicleType: "car",
+        accentColor: "#0288D1",
+        accentLight: "rgba(2,136,209,0.15)",
+        size: "500 ml",
+        image: "assets/images/products/monogram-cleaner.svg",
+        imagePlaceholder: "#0288D1",
+        description: "4M Autotech Monogram Cleaner Spray is specially formulated to lift and dissolve stubborn dirt, water scale, and road grime from vehicle badges, monograms, logos, and spare wheel covers without scratching.",
+        benefits: [
+            "Deep cleaning action for intricate letters & badges",
+            "Restores original chrome & gloss brightness",
+            "Zero scratches — gentle on clear coat & paint",
+            "Safe on ABS plastic, chrome, metal & fiberglass",
+            "Quick drying, residue-free formula with fresh fragrance"
+        ],
+        howToUse: [
+            "Shake well before use.",
+            "Spray directly on emblem, badge or spare wheel cover.",
+            "Allow product to dwell for 15-30 seconds.",
+            "Gently agitate with soft detailing brush or microfiber.",
+            "Wipe clean with a dry microfiber cloth."
+        ],
+        recommendedUse: "Car badges, Chrome monograms, SUV spare wheel covers, Lettering, Emblems.",
+        caution: [
+            "Do not spray on hot vehicle surfaces.",
+            "Use in well-ventilated areas."
+        ]
+    },
+    {
+        id: "brake-disc-cleaner",
+        name: "Brake Disc & Parts Cleaner",
+        subtitle: "High Performance Degreaser Spray",
+        tagline: "CLEAN • DEGREASE • RESTORE BRAKING",
+        category: ["engine-care", "cleaners", "bike-care", "car-care"],
+        categoryLabel: "Engine Care",
+        vehicleType: "both",
+        accentColor: "#C62828",
+        accentLight: "rgba(198,40,40,0.15)",
+        size: "600 ml",
+        image: "assets/images/products/brake-disc-cleaner.svg",
+        imagePlaceholder: "#C62828",
+        description: "4M Autotech Brake Disc & Parts Cleaner is an industrial-strength aerosol degreaser formulated to blast away stubborn brake dust, fluid, oil, and road grime from discs, calipers, and pads.",
+        benefits: [
+            "Rapidly removes brake dust, grease, and oil",
+            "Restores optimal braking grip & eliminates squeal",
+            "Ultra fast drying with zero powdery residue",
+            "Safe on alloy wheels, stainless steel & calipers",
+            "Professional grade German formulation"
+        ],
+        howToUse: [
+            "Shake can vigorously.",
+            "Spray generously directly onto brake disc, rotor, and caliper.",
+            "Allow solvent to dissolve grime and drip dry.",
+            "Wipe with clean cloth if heavy grease is present."
+        ],
+        recommendedUse: "Disc brakes, Drum brakes, Calipers, Rotors, Clutch components on cars & bikes.",
+        caution: [
+            "Do not spray on hot brake rotors.",
+            "Avoid contact with rubber seals and painted body panels."
+        ]
+    },
+    {
+        id: "bike-rust-mast",
+        name: "Bike Rust Mast",
+        subtitle: "Multi-Purpose Rust Lubricant Spray",
+        tagline: "PENETRATES FAST • LOOSENS RUST • STOPS SQUEAKS",
+        category: ["protection", "cleaners", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
+        accentColor: "#E65100",
+        accentLight: "rgba(230,81,0,0.15)",
+        size: "60 ml",
+        image: "assets/images/products/bike-rust-mast.svg",
+        imagePlaceholder: "#E65100",
+        description: "4M Autotech Bike Rust Mast is an all-angle 360° penetrant and lubricant spray that rapidly breaks down rust on seized bolts, linkages, footrests, and cables while driving out moisture.",
+        benefits: [
+            "Instantly loosens rusted nuts, bolts & fasteners",
+            "Stops squeaks and lubricates moving bike parts",
+            "Drives out moisture from electrical switches & spark plugs",
+            "360° spray valve operates at any angle upside down",
+            "Leaves a long-lasting anti-corrosion barrier"
+        ],
+        howToUse: [
+            "Shake can well before application.",
+            "Spray directly on rusted or squeaking parts.",
+            "Allow 2-3 minutes for deep capillary penetration.",
+            "Loosen part with tool or wipe excess."
+        ],
+        recommendedUse: "Chains, Nuts & bolts, Screws, Hinges, Main & side stands, Footrests, Levers, Cables, Silencer joints.",
+        caution: [
+            "Do not spray on brakes or tyre contact surfaces.",
+            "Extremely flammable."
+        ]
+    },
+    {
+        id: "bike-teflon-coating",
+        name: "Bike Teflon Coating",
+        subtitle: "Premium Protective Spray",
+        tagline: "SHINE • PROTECT • REPEL • PERFORM",
+        category: ["protection", "exterior-care", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
+        accentColor: "#1565C0",
+        accentLight: "rgba(21,101,192,0.15)",
+        size: "60 ml",
+        image: "assets/images/products/bike-teflon-coating.svg",
+        imagePlaceholder: "#1565C0",
+        description: "4M Autotech Bike Teflon Coating is a PTFE molecular protective spray that creates an invisible hydrophobic shield over fuel tanks, fairings, and metal parts to repel dust, water, and UV fading.",
+        benefits: [
+            "High gloss showroom shine with PTFE sealant",
+            "Extreme water beading and dust repelling shield",
+            "Shields against UV paint oxidation & fading",
+            "Prevents rust and corrosion on exposed metal",
+            "Quick wipe application — long lasting protection"
+        ],
+        howToUse: [
+            "Wash and dry bike completely.",
+            "Shake can well before use.",
+            "Spray evenly from a distance of 15-20 cm.",
+            "Allow 2-3 minutes for molecular bonding.",
+            "Buff to a glossy finish with a clean microfiber cloth."
+        ],
+        recommendedUse: "Sports bikes, Commuters, Scooters, Cruisers, Dirt bikes. Safe on paint, plastic, chrome & metal.",
+        caution: [
+            "Do not apply on tyres, seats or brake discs.",
+            "Do not apply in direct hot sunlight."
+        ]
+    },
+    {
+        id: "bike-chain-cleaner",
+        name: "Bike Chain Cleaner",
+        subtitle: "Spray Chain Cleaner & Degreaser",
+        tagline: "DEEP CLEAN • FAST DRY • SAFE FOR O-RINGS",
+        category: ["engine-care", "cleaners", "bike-care"],
+        categoryLabel: "Bike Care",
+        vehicleType: "bike",
+        accentColor: "#00838F",
+        accentLight: "rgba(0,131,143,0.15)",
+        size: "60 ml",
+        image: "assets/images/products/bike-chain-cleaner.svg",
+        imagePlaceholder: "#00838F",
+        description: "4M Autotech Bike Chain Cleaner is a specialized compact degreaser designed to instantly dissolve oil, grit, and old chain lube from motorcycle drive chains without damaging delicate rubber O/X/Z-Rings.",
+        benefits: [
+            "Removes stubborn road grit, grease & old lube",
+            "100% O-Ring, X-Ring & Z-Ring safe",
+            "Cleans chain links and sprocket teeth for smooth ride",
+            "Fast drying formula leaves zero oily film",
+            "Easy portable spray can"
+        ],
+        howToUse: [
+            "Put bike on main stand.",
+            "Spray directly on chain and sprockets.",
+            "Allow 2-3 minutes to dissolve dirt; scrub with brush if required.",
+            "Wipe clean with cloth and apply chain lube."
+        ],
+        recommendedUse: "All motorcycle drive chains, Sprockets, Commuters & Superbikes.",
+        caution: [
+            "Do not apply on hot chains.",
+            "Do not spray on brake pads or discs."
+        ]
     }
 ];
 
+// Add vehicleType default 'car' to earlier products if not specified
+PRODUCTS.forEach(p => {
+    if (!p.vehicleType) {
+        if (p.id.startsWith('bike-') || p.id.includes('chain-')) {
+            p.vehicleType = 'bike';
+        } else if (p.id === 'fuel-additive' || p.id === 'tyre-polish' || p.id === 'brake-cleaner') {
+            p.vehicleType = 'both';
+        } else {
+            p.vehicleType = 'car';
+        }
+    }
+});
+
 // Filter categories
 const PRODUCT_CATEGORIES = [
-    { id: "all", label: "ALL" },
+    { id: "all", label: "ALL PRODUCTS" },
+    { id: "car-care", label: "🚗 CAR CARE" },
+    { id: "bike-care", label: "🏍️ BIKE CARE" },
     { id: "exterior-care", label: "EXTERIOR CARE" },
     { id: "interior-care", label: "INTERIOR CARE" },
     { id: "engine-care", label: "ENGINE CARE" },
-    { id: "fuel-care", label: "FUEL CARE" },
     { id: "cleaners", label: "CLEANERS" },
     { id: "polish", label: "POLISH" },
     { id: "protection", label: "PROTECTION" }
 ];
+
