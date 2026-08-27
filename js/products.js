@@ -16,7 +16,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹499.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/fuel-additive.svg",
+        image: "assets/images/products/fuel-additive.png",
         imagePlaceholder: "#D71920",
         description: "4M Autotech Fuel Additive is a high performance fuel system cleaner specially formulated to clean and protect the entire fuel system. It removes deposits, improves fuel economy, reduces emissions and enhances engine performance.",
         benefits: [
@@ -58,7 +58,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/tyre-polish.svg",
+        image: "assets/images/products/tyre-polish.png",
         imagePlaceholder: "#E6A817",
         description: "4M Autotech Tyre Polish is a premium quality tyre care product designed to give your tyres a deep black shine and long lasting protection.",
         benefits: [
@@ -103,7 +103,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/black-garnish.svg",
+        image: "assets/images/products/black-garnish.png",
         imagePlaceholder: "#E6A817",
         description: "Brings New Life to All Exterior Black Parts. 4M Autotech Black Garnish instantly restores the original black appearance of all exterior plastic and rubber trims.",
         benefits: [
@@ -146,7 +146,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹499.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/brake-cleaner.svg",
+        image: "assets/images/products/brake-cleaner.png",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Brake Cleaner is a heavy duty cleaner formulated to quickly clean brake and clutch components by removing oil, grease and brake fluid residue.",
         benefits: [
@@ -188,7 +188,7 @@ const PRODUCTS = [
         size: "250 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/head-light-cleaner.svg",
+        image: "assets/images/products/head-light-cleaner.png",
         imagePlaceholder: "#1B4F8C",
         description: "Crystal Clear Vision, Safer Driving. 4M Autotech Head Light Cleaner removes yellowing and oxidation to restore clarity and brightness to all headlights.",
         benefits: [
@@ -233,7 +233,7 @@ const PRODUCTS = [
         size: "250 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/paint-spot-remover.svg",
+        image: "assets/images/products/paint-spot-remover.png",
         imagePlaceholder: "#D71920",
         description: "4M Autotech Paint Spot Remover is a specially developed formula to remove paint spots, over spray, water spots, rail dust and other stubborn contaminants from your vehicle's painted surface safely and effectively without damaging or scratching the original paint.",
         benefits: [
@@ -279,7 +279,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/foam-wash-cleaner.svg",
+        image: "assets/images/products/foam-wash-cleaner.png",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Foam Wash Cleaner is a high foam car shampoo that delivers thick foam for deep cleaning, removing dirt, mud and road film safely.",
         benefits: [
@@ -322,7 +322,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/seat-dry-cleaner.svg",
+        image: "assets/images/products/seat-dry-cleaner.png",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Seat Dry Cleaner uses a dry foam formula for powerful interior cleaning without water. Removes stains, dirt and spills while neutralizing odors.",
         benefits: [
@@ -365,7 +365,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹399.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/dashboard-polish.svg",
+        image: "assets/images/products/dashboard-polish.png",
         imagePlaceholder: "#2E7D32",
         description: "4M Autotech Dashboard Polish is a premium interior care product that restores the original look of your dashboard and all interior surfaces with long-lasting shine and UV protection.",
         benefits: [
@@ -405,7 +405,7 @@ const PRODUCTS = [
         accentLight: "rgba(139,69,19,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/anti-rust-coating.svg",
+        image: "assets/images/products/anti-rust-coating.png",
         imagePlaceholder: "#8B4513",
         description: "4M Autotech Anti Rust Coating provides powerful protection against rust and corrosion on exposed metal surfaces, extending the life of your vehicle's body panels and components.",
         benefits: [
@@ -438,7 +438,7 @@ const PRODUCTS = [
         accentLight: "rgba(96,125,139,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/rubbing-polish.svg",
+        image: "assets/images/products/rubbing-polish.png",
         imagePlaceholder: "#607D8B",
         description: "4M Autotech Rubbing Polish is a paint restoration formula that removes light scratches, swirl marks and surface imperfections to restore the original gloss and depth of your vehicle's paint.",
         benefits: [
@@ -471,7 +471,7 @@ const PRODUCTS = [
         accentLight: "rgba(69,90,100,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/body-polish.svg",
+        image: "assets/images/products/body-polish.png",
         imagePlaceholder: "#455A64",
         description: "4M Autotech Body Polish delivers a brilliant shine to your vehicle's entire body surface while providing a protective layer against environmental contaminants.",
         benefits: [
@@ -504,7 +504,7 @@ const PRODUCTS = [
         accentLight: "rgba(84,110,122,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/teflon-coating.svg",
+        image: "assets/images/products/teflon-coating.png",
         imagePlaceholder: "#546E7A",
         description: "4M Autotech Teflon Coating provides an advanced protective layer on your vehicle's paint surface, delivering long-lasting gloss and protection against environmental damage.",
         benefits: [
@@ -538,7 +538,7 @@ const PRODUCTS = [
         accentLight: "rgba(245,127,23,0.15)",
         size: "50 g",
         mrp: null,
-        image: "assets/images/products/battery-jelly.svg",
+        image: "assets/images/products/battery-jelly.png",
         imagePlaceholder: "#F57F17",
         description: "4M Autotech Battery Jelly protects battery terminals and connections from corrosion, ensuring reliable electrical contact and extended battery life.",
         benefits: [
@@ -560,38 +560,6 @@ const PRODUCTS = [
         ]
     },
     {
-        id: "oil-additive",
-        name: "Oil Additive",
-        subtitle: "Engine Oil Enhancer",
-        tagline: "PROTECT • ENHANCE • PERFORM",
-        category: ["engine-care", "fuel-care"],
-        categoryLabel: "Engine Care",
-        accentColor: "#BF360C",
-        accentLight: "rgba(191,54,12,0.15)",
-        size: "300 ml",
-        mrp: null,
-        image: "assets/images/products/oil-additive.svg",
-        imagePlaceholder: "#BF360C",
-        description: "4M Autotech Oil Additive enhances your engine oil's protective properties, reducing friction and wear for improved engine performance and longevity.",
-        benefits: [
-            "Reduces engine wear",
-            "Enhances oil protection",
-            "Quieter engine operation",
-            "Extended oil life"
-        ],
-        howToUse: [
-            "Add to engine oil during oil change or between changes.",
-            "Use recommended quantity as per engine size.",
-            "Run engine normally."
-        ],
-        recommendedUse: "All petrol and diesel engines. Add during regular oil change.",
-        caution: [
-            "Keep out of reach of children.",
-            "Avoid contact with eyes and skin.",
-            "Do not swallow."
-        ]
-    },
-    {
         id: "injector-cleaner",
         name: "Injector Cleaner",
         subtitle: "Fuel Injector Treatment",
@@ -602,7 +570,7 @@ const PRODUCTS = [
         accentLight: "rgba(21,101,192,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/injector-cleaner.svg",
+        image: "assets/images/products/injector-cleaner.png",
         imagePlaceholder: "#1565C0",
         description: "4M Autotech Injector Cleaner is specially formulated to clean fuel injectors and remove deposits that affect performance and fuel efficiency.",
         benefits: [
@@ -634,7 +602,7 @@ const PRODUCTS = [
         accentLight: "rgba(158,158,158,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/chrome-cleaner.svg",
+        image: "assets/images/products/chrome-cleaner.png",
         imagePlaceholder: "#9E9E9E",
         description: "4M Autotech Chrome Cleaner restores the brilliant shine of all chrome and metal surfaces, removing tarnish, oxidation and water spots.",
         benefits: [
@@ -653,39 +621,6 @@ const PRODUCTS = [
             "Keep out of reach of children.",
             "Avoid contact with eyes.",
             "Do not use on painted surfaces."
-        ]
-    },
-    {
-        id: "paint-stop-remover",
-        name: "Paint Stop Remover",
-        subtitle: "Surface Contaminant Remover",
-        tagline: "REMOVE • RESTORE • PROTECT",
-        category: ["exterior-care", "cleaners"],
-        categoryLabel: "Exterior Care",
-        accentColor: "#D71920",
-        accentLight: "rgba(215,25,32,0.15)",
-        size: "300 ml",
-        mrp: null,
-        image: "assets/images/products/paint-stop-remover.svg",
-        imagePlaceholder: "#D71920",
-        description: "4M Autotech Paint Stop Remover effectively removes stubborn paint contamination and overspray from vehicle surfaces.",
-        benefits: [
-            "Removes stubborn paint contamination",
-            "Safe on vehicle surfaces",
-            "Quick & effective results",
-            "Professional grade formula"
-        ],
-        howToUse: [
-            "Clean the area before application.",
-            "Apply product on microfiber cloth.",
-            "Gently work on the affected area.",
-            "Wipe clean and inspect."
-        ],
-        recommendedUse: "Painted vehicle surfaces. Stubborn paint spots.",
-        caution: [
-            "Keep out of reach of children.",
-            "Avoid contact with eyes.",
-            "Test on small area first."
         ]
     }
 ];

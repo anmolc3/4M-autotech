@@ -1,115 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
   <defs>
-    <radialGradient id="bgGlow" cx="50%" cy="45%" r="65%">
-      <stop offset="0%" stop-color="#D71920" stop-opacity="0.22" />
-      <stop offset="55%" stop-color="#141414" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#080808" stop-opacity="1" />
+    <radialGradient id="backdropGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#D71920" stop-opacity="0.32" />
+      <stop offset="45%" stop-color="#141414" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1" />
     </radialGradient>
-    <linearGradient id="bottleBody" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0a0a0a" />
-      <stop offset="20%" stop-color="#282828" />
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080808" />
+      <stop offset="18%" stop-color="#242424" />
       <stop offset="45%" stop-color="#3c3c3c" />
-      <stop offset="55%" stop-color="#1c1c1c" />
-      <stop offset="85%" stop-color="#2c2c2c" />
-      <stop offset="100%" stop-color="#0c0c0c" />
-    </linearGradient>
-    <linearGradient id="labelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#181818" />
-      <stop offset="50%" stop-color="#101010" />
+      <stop offset="55%" stop-color="#181818" />
+      <stop offset="82%" stop-color="#2a2a2a" />
       <stop offset="100%" stop-color="#0a0a0a" />
     </linearGradient>
-    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="metallicCan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="25%" stop-color="#666666" />
+      <stop offset="50%" stop-color="#888888" />
+      <stop offset="75%" stop-color="#333333" />
+      <stop offset="100%" stop-color="#111111" />
+    </linearGradient>
+    <linearGradient id="labelDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1c" />
+      <stop offset="60%" stop-color="#101010" />
+      <stop offset="100%" stop-color="#070707" />
+    </linearGradient>
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#fff" stop-opacity="0" />
-      <stop offset="35%" stop-color="#fff" stop-opacity="0.18" />
-      <stop offset="50%" stop-color="#fff" stop-opacity="0.02" />
+      <stop offset="30%" stop-color="#fff" stop-opacity="0.28" />
+      <stop offset="45%" stop-color="#fff" stop-opacity="0.04" />
+      <stop offset="85%" stop-color="#fff" stop-opacity="0.12" />
       <stop offset="100%" stop-color="#fff" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="brandAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#D71920" />
-      <stop offset="100%" stop-color="#1B4F8C" />
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#000" flood-opacity="0.8" />
+    <filter id="softShadow" x="-25%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#000" flood-opacity="0.85" />
     </filter>
-    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#000" stop-opacity="0.9" />
-      <stop offset="60%" stop-color="#000" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    <radialGradient id="floorReflection" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D71920" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="600" height="600" fill="url(#bgGlow)" />
+  <rect width="600" height="600" fill="url(#backdropGlow)" />
 
-  <!-- Studio Grid Texture -->
-  <g opacity="0.05" stroke="#fff" stroke-width="1">
-    <line x1="0" y1="150" x2="600" y2="150" />
-    <line x1="0" y1="300" x2="600" y2="300" />
-    <line x1="0" y1="450" x2="600" y2="450" />
-    <line x1="150" y1="0" x2="150" y2="600" />
-    <line x1="300" y1="0" x2="300" y2="600" />
-    <line x1="450" y1="0" x2="450" y2="600" />
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1.5" fill="none">
+    <circle cx="300" cy="300" r="180" />
+    <circle cx="300" cy="300" r="260" />
+    <line x1="0" y1="300" x2="600" y2="300" stroke-dasharray="8 8"/>
+    <line x1="300" y1="0" x2="300" y2="600" stroke-dasharray="8 8"/>
   </g>
 
-  <!-- Floor Pedestal Reflection / Shadow -->
-  <ellipse cx="300" cy="520" rx="140" ry="28" fill="url(#floorShadow)" />
-  <ellipse cx="300" cy="515" rx="110" ry="12" fill="#D71920" opacity="0.2" />
+  <ellipse cx="300" cy="525" rx="160" ry="32" fill="url(#floorReflection)" />
+  <ellipse cx="300" cy="518" rx="100" ry="12" fill="#D71920" opacity="0.45" />
 
-  <!-- Main Container / Bottle with Shadow -->
-  <g filter="url(#shadow)">
-    <!-- Bottle Silhouette -->
+  <g filter="url(#softShadow)">
     
-      <!-- Tall Bottle / Canister Body -->
-      <path d="M 255 200 Q 300 190 345 200 L 360 230 L 360 490 Q 300 515 240 490 L 240 230 Z" fill="url(#bottleBody)" stroke="#383838" stroke-width="2" />
-      <path d="M 255 200 Q 300 190 345 200 L 360 230 L 360 490 Q 300 515 240 490 L 240 230 Z" fill="url(#sheen)" />
-
-      <!-- Label Body Section -->
-      <rect x="245" y="240" width="110" height="235" rx="6" fill="url(#labelGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      
-      <!-- Accent stripes on label -->
-      <rect x="245" y="240" width="110" height="10" fill="url(#brandAccent)" />
-      <rect x="245" y="465" width="110" height="10" fill="url(#brandAccent)" />
+      <g id="aerosolCap">
+        <path d="M 260 120 Q 300 85 340 120 L 340 195 L 260 195 Z" fill="#D71920" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+        <rect x="286" y="98" width="28" height="15" rx="3" fill="#111" />
+        <circle cx="300" cy="105" r="3" fill="#eee" />
+        <rect x="252" y="190" width="96" height="16" rx="3" fill="#2a2a2a" stroke="#444" stroke-width="1.5"/>
+      </g>
+      <rect x="250" y="200" width="100" height="295" rx="6" fill="url(#metallicCan)" stroke="#3a3a3a" stroke-width="2"/>
+      <rect x="250" y="200" width="100" height="295" rx="6" fill="url(#glassSheen)"/>
+      <rect x="250" y="245" width="100" height="235" fill="url(#labelDarkGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="250" y="245" width="100" height="8" fill="#D71920"/>
+      <rect x="250" y="472" width="100" height="8" fill="#D71920"/>
     
 
-    <!-- Nozzle / Head -->
-    
-      <!-- Aerosol Dome Cap -->
-      <path d="M 265 130 Q 300 95 335 130 L 335 190 L 265 190 Z" fill="#D71920" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
-      <rect x="285" y="105" width="30" height="15" rx="3" fill="#111" />
-      <circle cx="300" cy="112" r="3" fill="#eee" />
-      <rect x="260" y="185" width="80" height="15" rx="2" fill="#1f1f1f" stroke="#333" />
-    
-
-    <!-- Label Content -->
     <g text-anchor="middle">
-      <!-- 4M Brand Badge -->
-      <polygon points="300,265 315,274 315,292 300,301 285,292 285,274" fill="#D71920" />
-      <text x="300" y="288" font-family="'Rajdhani', 'Impact', sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1">4M</text>
+      <polygon points="300,282 314,291 314,307 300,315 286,307 286,291" fill="#D71920" stroke="#ffffff" stroke-width="1"/>
+      <text x="300" y="303" font-family="&apos;Rajdhani&apos;, &apos;Impact&apos;, sans-serif" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="1">4M</text>
       
-      <text x="300" y="318" font-family="'Rajdhani', 'Arial Black', sans-serif" font-size="10" font-weight="800" fill="#fff" letter-spacing="2.5">AUTOTECH</text>
-      <text x="300" y="328" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#D71920" letter-spacing="1.5">PRO FORMULA</text>
+      <text x="300" y="330" font-family="&apos;Rajdhani&apos;, &apos;Arial Black&apos;, sans-serif" font-size="10.5" font-weight="800" fill="#ffffff" letter-spacing="2.8">AUTOTECH</text>
+      <text x="300" y="340" font-family="&apos;Inter&apos;, sans-serif" font-size="6.5" font-weight="700" fill="#D71920" letter-spacing="1.5">PROFESSIONAL CAR CARE</text>
 
-      <!-- Divider line -->
-      <line x1="260" y1="336" x2="340" y2="336" stroke="#D71920" stroke-width="1.5" opacity="0.8" />
+      <line x1="258" y1="348" x2="342" y2="348" stroke="#D71920" stroke-width="1.8" />
 
-      <!-- Product Title on Label -->
-      <text x="300" y="360" font-family="'Rajdhani', 'Arial Black', sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1">BRAKE</text>
-      <text x="300" y="375" font-family="'Rajdhani', 'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="1">CLEANER</text>
+      <text x="300" y="370" font-family="&apos;Rajdhani&apos;, &apos;Arial Black&apos;, sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1">BRAKE</text>
+      <text x="300" y="386" font-family="&apos;Rajdhani&apos;, &apos;Arial Black&apos;, sans-serif" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="1">CLEANER</text>
       
-      <!-- Subtitle -->
-      <text x="300" y="400" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#bbb" letter-spacing="0.8">HEAVY DUTY DEGREASER</text>
+      <text x="300" y="408" font-family="&apos;Inter&apos;, sans-serif" font-size="6.5" font-weight="600" fill="#cfcfcf" letter-spacing="0.5">HEAVY DUTY ROTOR &amp; CALIPER DEGREASER</text>
+      <text x="300" y="420" font-family="&apos;Inter&apos;, sans-serif" font-size="6" font-weight="600" fill="#D71920" letter-spacing="0.6">RAPID DRY ZERO RESIDUE</text>
 
-      <!-- Spec Badges -->
-      <rect x="260" y="420" width="80" height="18" rx="3" fill="#1e1e1e" stroke="#D71920" stroke-width="1" />
-      <text x="300" y="433" font-family="'Rajdhani', sans-serif" font-size="9" font-weight="700" fill="#D71920" letter-spacing="1.5">300 ML • PREMIUM</text>
+      <rect x="256" y="432" width="88" height="18" rx="4" fill="#1c1c1c" stroke="#D71920" stroke-width="1.2" />
+      <text x="300" y="445" font-family="&apos;Rajdhani&apos;, sans-serif" font-size="9" font-weight="800" fill="#ffffff" letter-spacing="1.5">300 ML • PRO GRADE</text>
 
-      <text x="300" y="455" font-family="'Inter', sans-serif" font-size="6" font-weight="500" fill="#777" letter-spacing="1">KGN CAR DETAILING</text>
+      <text x="300" y="466" font-family="&apos;Inter&apos;, sans-serif" font-size="5.8" font-weight="600" fill="#888888" letter-spacing="0.8">ROTORS • CALIPERS • CLUTCH</text>
     </g>
   </g>
 
-  <!-- Ambient Light Sparks / Particles -->
-  <circle cx="200" cy="180" r="2" fill="#D71920" opacity="0.6" />
-  <circle cx="410" cy="220" r="2.5" fill="#D71920" opacity="0.8" />
-  <circle cx="180" cy="400" r="1.5" fill="#fff" opacity="0.4" />
-  <circle cx="430" cy="380" r="2" fill="#fff" opacity="0.5" />
+  <g fill="#ffffff" opacity="0.75">
+    <circle cx="230" cy="190" r="2" />
+    <polygon points="230,186 232,190 236,190 233,192 234,196 230,193 226,196 227,192 224,190 228,190" fill="#D71920" />
+    <circle cx="420" cy="240" r="2.5" />
+    <polygon points="420,235 422,240 427,240 423,243 425,248 420,244 415,248 417,243 413,240 418,240" fill="#ffffff" />
+  </g>
 </svg>
