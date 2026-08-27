@@ -1045,8 +1045,8 @@ PRODUCTS.forEach(p => {
 // Filter categories
 const PRODUCT_CATEGORIES = [
     { id: "all", label: "ALL PRODUCTS" },
-    { id: "car-care", label: "🚗 CAR CARE" },
-    { id: "bike-care", label: "🏍️ BIKE CARE" },
+    { id: "car-care", label: "CAR CARE", iconName: "car" },
+    { id: "bike-care", label: "BIKE CARE", iconName: "bike" },
     { id: "exterior-care", label: "EXTERIOR CARE" },
     { id: "interior-care", label: "INTERIOR CARE" },
     { id: "engine-care", label: "ENGINE CARE" },

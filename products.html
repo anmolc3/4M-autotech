@@ -63,10 +63,45 @@
     <section class="section" id="products-section">
         <div class="container">
             <div class="filter-bar" id="product-filter-bar" role="tablist"></div>
-            <div style="margin-bottom:24px;">
-                <span id="products-count" style="font-family:var(--font-heading);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted)"></span>
+            
+            <!-- Standard dynamic grid when specific category selected -->
+            <div id="single-view-container" style="display:none;">
+                <div style="margin-bottom:24px;">
+                    <span id="products-count" style="font-family:var(--font-heading);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted)"></span>
+                </div>
+                <div class="products-grid" id="products-grid"></div>
             </div>
-            <div class="products-grid" id="products-grid"></div>
+
+            <!-- Dual-Section View (When "ALL PRODUCTS" is active) -->
+            <div id="dual-view-container">
+                <!-- CAR CARE SECTION -->
+                <div style="margin-bottom:60px;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:14px;">
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span style="color:var(--red);display:inline-flex;align-items:center;">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2.1 11.2 2 11.6 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                            </span>
+                            <h2 style="font-size:1.4rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin:0;">Car Care Range</h2>
+                        </div>
+                        <span id="car-count" style="font-family:var(--font-heading);font-size:12px;letter-spacing:1.5px;color:var(--text-muted);text-transform:uppercase;"></span>
+                    </div>
+                    <div class="products-grid" id="car-products-grid"></div>
+                </div>
+
+                <!-- BIKE CARE SECTION -->
+                <div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:14px;">
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span style="color:var(--red);display:inline-flex;align-items:center;">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="16" r="3.5"/><circle cx="19" cy="16" r="3.5"/><path d="M5 16l3.5-6h3.5l2.5 3h4.5l-2 3"/><path d="M11 7l2-3h3"/><path d="M12 10l-1.5 6h4.5l2-3.5"/><circle cx="15.5" cy="4.5" r="0.75" fill="currentColor"/></svg>
+                            </span>
+                            <h2 style="font-size:1.4rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin:0;">Bike &amp; Two-Wheeler Care</h2>
+                        </div>
+                        <span id="bike-count" style="font-family:var(--font-heading);font-size:12px;letter-spacing:1.5px;color:var(--text-muted);text-transform:uppercase;"></span>
+                    </div>
+                    <div class="products-grid" id="bike-products-grid"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -203,43 +238,68 @@
             filterBar.appendChild(btn);
         });
 
+        const singleView = document.getElementById('single-view-container');
+        const dualView = document.getElementById('dual-view-container');
         const grid = document.getElementById('products-grid');
         const countEl = document.getElementById('products-count');
+        const carGrid = document.getElementById('car-products-grid');
+        const bikeGrid = document.getElementById('bike-products-grid');
+        const carCount = document.getElementById('car-count');
+        const bikeCount = document.getElementById('bike-count');
         const arrowSvg = `<svg style="width:12px;height:12px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
 
+        function createProductCard(p) {
+            const card = document.createElement('div');
+            card.className = 'product-card fade-in';
+            card.id = `product-card-${p.id}`;
+            card.setAttribute('role', 'button');
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('aria-label', `View ${p.name} details`);
+            card.innerHTML = `
+                <div class="product-card__image" style="background:${p.imagePlaceholder}22">
+                    <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="product-card__image-placeholder" style="display:none;background:${p.imagePlaceholder}22;color:${p.accentColor}">${p.name.substring(0,2).toUpperCase()}</div>
+                    ${p.size ? `<span class="product-card__badge">${p.size}</span>` : ''}
+                </div>
+                <div class="product-card__body">
+                    <div class="product-card__category">${p.categoryLabel}</div>
+                    <div class="product-card__name">${p.name}</div>
+                    <div class="product-card__subtitle">${p.subtitle}</div>
+                    <div class="product-card__footer">
+                        <span class="product-card__cta" style="color:${p.accentColor}">View Details ${arrowSvg}</span>
+                    </div>
+                </div>
+            `;
+            card.addEventListener('click', () => openModal(p));
+            card.addEventListener('keydown', e => { if (e.key === 'Enter') openModal(p); });
+            return card;
+        }
+
         function renderProducts() {
-            const filtered = activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category.includes(activeCategory));
-            countEl.textContent = `${filtered.length} Product${filtered.length !== 1 ? 's' : ''}`;
-            grid.innerHTML = '';
-            filtered.forEach(p => {
-                const card = document.createElement('div');
-                card.className = 'product-card fade-in';
-                card.id = `product-card-${p.id}`;
-                card.setAttribute('role', 'button');
-                card.setAttribute('tabindex', '0');
-                card.setAttribute('aria-label', `View ${p.name} details`);
-                card.innerHTML = `
-                    <div class="product-card__image" style="background:${p.imagePlaceholder}22">
-                        <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                        <div class="product-card__image-placeholder" style="display:none;background:${p.imagePlaceholder}22;color:${p.accentColor}">${p.name.substring(0,2).toUpperCase()}</div>
-                        ${p.size ? `<span class="product-card__badge">${p.size}</span>` : ''}
-                        <span class="product-card__badge" style="right:12px;left:auto;background:rgba(215,25,32,0.85);color:#fff;border-color:rgba(255,255,255,0.2)">
-                            ${p.vehicleType === 'bike' ? '🏍️ BIKE' : (p.vehicleType === 'car' ? '🚗 CAR' : '🚗🏍️ ALL')}
-                        </span>
-                    </div>
-                    <div class="product-card__body">
-                        <div class="product-card__category">${p.categoryLabel}</div>
-                        <div class="product-card__name">${p.name}</div>
-                        <div class="product-card__subtitle">${p.subtitle}</div>
-                        <div class="product-card__footer">
-                            <span class="product-card__cta" style="color:${p.accentColor}">View Details ${arrowSvg}</span>
-                        </div>
-                    </div>
-                `;
-                card.addEventListener('click', () => openModal(p));
-                card.addEventListener('keydown', e => { if (e.key === 'Enter') openModal(p); });
-                grid.appendChild(card);
-            });
+            if (activeCategory === 'all') {
+                singleView.style.display = 'none';
+                dualView.style.display = 'block';
+
+                const carList = PRODUCTS.filter(p => p.vehicleType === 'car' || p.vehicleType === 'both');
+                const bikeList = PRODUCTS.filter(p => p.vehicleType === 'bike' || p.category.includes('bike-care'));
+
+                carCount.textContent = `${carList.length} Products`;
+                bikeCount.textContent = `${bikeList.length} Products`;
+
+                carGrid.innerHTML = '';
+                carList.forEach(p => carGrid.appendChild(createProductCard(p)));
+
+                bikeGrid.innerHTML = '';
+                bikeList.forEach(p => bikeGrid.appendChild(createProductCard(p)));
+            } else {
+                dualView.style.display = 'none';
+                singleView.style.display = 'block';
+
+                const filtered = PRODUCTS.filter(p => p.category.includes(activeCategory));
+                countEl.textContent = `${filtered.length} Product${filtered.length !== 1 ? 's' : ''}`;
+                grid.innerHTML = '';
+                filtered.forEach(p => grid.appendChild(createProductCard(p)));
+            }
             document.querySelectorAll('.fade-in:not(.visible)').forEach(el => observer.observe(el));
         }
 
@@ -283,6 +343,13 @@
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
         const params = new URLSearchParams(window.location.search);
+        const catParam = params.get('category');
+        if (catParam && PRODUCT_CATEGORIES.some(c => c.id === catParam)) {
+            activeCategory = catParam;
+            filterBar.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.toggle('active', b.dataset.category === catParam);
+            });
+        }
         const targetId = params.get('product');
         renderProducts();
         if (targetId) {
