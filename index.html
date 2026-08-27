@@ -27,6 +27,7 @@
                     <li><a href="about.html" class="nav__link" id="nav-about">About</a></li>
                     <li><a href="products.html" class="nav__link" id="nav-products">Products</a></li>
                     <li><a href="services.html" class="nav__link" id="nav-services">Services</a></li>
+                    <li><a href="home-service.html" class="nav__link" id="nav-home-service">Home Service</a></li>
                     <li><a href="contact.html" class="nav__link" id="nav-contact">Contact</a></li>
                 </ul>
                 <a href="contact.html" class="nav__cta" id="nav-enquire">Enquire Now</a>
@@ -40,6 +41,7 @@
             <a href="about.html" class="nav__link" id="mob-about">About</a>
             <a href="products.html" class="nav__link" id="mob-products">Products</a>
             <a href="services.html" class="nav__link" id="mob-services">Services</a>
+            <a href="home-service.html" class="nav__link" id="mob-home-service">Home Service</a>
             <a href="contact.html" class="nav__link" id="mob-contact">Contact</a>
             <a href="contact.html" class="btn btn--primary btn--sm" id="mob-enquire">Enquire Now</a>
         </div>
@@ -197,6 +199,7 @@
                         <li><a href="about.html" class="footer__link">About Us</a></li>
                         <li><a href="products.html" class="footer__link">Products</a></li>
                         <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="home-service.html" class="footer__link">Home Service</a></li>
                         <li><a href="contact.html" class="footer__link">Contact</a></li>
                     </ul>
                 </div>
@@ -258,8 +261,7 @@
                     <div class="product-card__name">${p.name}</div>
                     <div class="product-card__subtitle">${p.subtitle}</div>
                     <div class="product-card__footer">
-                        <div class="product-card__price">${p.mrp || '<span class="coming-soon">Enquire for price</span>'}</div>
-                        <a href="products.html?product=${p.id}" class="product-card__cta" style="color:${p.accentColor}">Details
+                        <a href="products.html?product=${p.id}" class="product-card__cta" style="color:${p.accentColor}">View Details
                             <svg style="width:12px;height:12px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
                     </div>

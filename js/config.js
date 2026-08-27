@@ -40,7 +40,8 @@ const SITE_CONFIG = {
         general: "Hello, I am interested in 4M Autotech products. Please provide more information.",
         services: "Hello, I would like to enquire about your car detailing services.",
         productTemplate: (name) => `Hello, I am interested in 4M Autotech ${name}. Please provide more details.`,
-        carSpa: "Hello, I would like to enquire about the Car Spa detailing package."
+        carSpa: "Hello, I would like to enquire about the Car Spa detailing package.",
+        homeService: "Hello 4M Autotech, I would like to book a Doorstep Car Care / Home Service for my vehicle."
     }
 };
 

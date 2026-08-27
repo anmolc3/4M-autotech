@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doorstep Home Service — 4M AUTOTECH | Professional Car Care at Your Home</title>
+    <meta name="description" content="Professional car care and detailing at your doorstep by 4M AUTOTECH. Dry cleaning, engine inspection, rubbing polish, bodyshop polish, glass coating, engine coating and more in New Delhi.">
+    <link rel="canonical" href="https://www.khawajagaribnawazcardetailing.com/home-service.html">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .home-service-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(215, 25, 32, 0.12);
+            border: 1px solid var(--border-accent);
+            color: var(--red);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .home-service-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--red);
+            box-shadow: 0 0 8px var(--red);
+        }
+        .services-grid-home {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .service-card-modern {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--card-radius);
+            padding: 32px 28px;
+            transition: all var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card-modern:hover {
+            transform: translateY(-5px);
+            border-color: rgba(215, 25, 32, 0.4);
+            box-shadow: var(--shadow-hover);
+        }
+        .service-card-modern__icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background: var(--red-light);
+            border: 1px solid var(--border-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--red);
+            margin-bottom: 20px;
+        }
+        .service-card-modern__icon svg {
+            width: 26px;
+            height: 26px;
+        }
+        .service-card-modern__tag {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            font-family: var(--font-heading);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            background: var(--surface);
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+        .service-card-modern__title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .service-card-modern__desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .service-card-modern__features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+            padding-top: 18px;
+        }
+        .service-card-modern__features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        .service-card-modern__features svg {
+            width: 15px;
+            height: 15px;
+            color: var(--red);
+            flex-shrink: 0;
+        }
+        .service-card-modern__actions {
+            display: flex;
+            gap: 10px;
+        }
+        .how-it-works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-top: 36px;
+        }
+        .how-step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--card-radius);
+            padding: 28px;
+            position: relative;
+        }
+        .how-step__num {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            color: var(--red);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 14px;
+        }
+        .how-step__title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .how-step__desc {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .booking-banner {
+            background: linear-gradient(135deg, rgba(215, 25, 32, 0.15), rgba(10, 10, 10, 0.95)), var(--surface);
+            border: 1px solid var(--border-accent);
+            border-radius: 16px;
+            padding: 48px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+        .booking-banner__content {
+            max-width: 600px;
+        }
+        .booking-banner__title {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .booking-banner__sub {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .booking-banner__btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="nav" id="main-nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="nav__logo" id="nav-logo">
+                    <div class="nav__logo-mark">4M</div>
+                    <div class="nav__logo-text">
+                        <span class="nav__logo-name">4M Autotech</span>
+                        <span class="nav__logo-sub">Car Care Specialists</span>
+                    </div>
+                </a>
+                <ul class="nav__links">
+                    <li><a href="index.html" class="nav__link" id="nav-home">Home</a></li>
+                    <li><a href="about.html" class="nav__link" id="nav-about">About</a></li>
+                    <li><a href="products.html" class="nav__link" id="nav-products">Products</a></li>
+                    <li><a href="services.html" class="nav__link" id="nav-services">Services</a></li>
+                    <li><a href="home-service.html" class="nav__link active" id="nav-home-service">Home Service</a></li>
+                    <li><a href="contact.html" class="nav__link" id="nav-contact">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="nav__cta" id="nav-enquire">Enquire Now</a>
+                <div class="nav__hamburger" id="hamburger" role="button" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="index.html" class="nav__link" id="mob-home">Home</a>
+            <a href="about.html" class="nav__link" id="mob-about">About</a>
+            <a href="products.html" class="nav__link" id="mob-products">Products</a>
+            <a href="services.html" class="nav__link" id="mob-services">Services</a>
+            <a href="home-service.html" class="nav__link active" id="mob-home-service">Home Service</a>
+            <a href="contact.html" class="nav__link" id="mob-contact">Contact</a>
+            <a href="contact.html" class="btn btn--primary btn--sm" id="mob-enquire">Enquire Now</a>
+        </div>
+    </nav>
+
+    <!-- ====== PAGE HERO ====== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <span class="home-service-badge">Doorstep Car Care</span>
+                <h1 class="page-hero__title">Professional <span>Home Service</span></h1>
+                <p class="page-hero__sub">
+                    Get showroom-grade car detailing and mechanical treatment performed right at your doorstep. We bring the equipment, chemicals, and expertise to you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== HOME SERVICES CATALOG ====== -->
+    <section class="section" id="home-services-list">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Doorstep Treatments</span>
+                <h2 class="section-title">Comprehensive <span>At-Home Services</span></h2>
+                <p class="section-sub">Trained detailing technicians equipped with specialized 4M AUTOTECH chemical formulas.</p>
+            </div>
+
+            <div class="services-grid-home">
+                <!-- 1. Dry Cleaning -->
+                <div class="service-card-modern fade-in">
+                    <div class="service-card-modern__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                    </div>
+                    <span class="service-card-modern__tag">Interior Spa</span>
+                    <div class="service-card-modern__title">Complete Dry Cleaning</div>
+                    <div class="service-card-modern__desc">
+                        Deep foam dry-cleaning of seats, fabric, leather, roof lining, carpet, dashboard, and door panels without water soaking.
+                    </div>
+                    <ul class="service-card-modern__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Fabric &amp; Leather Stain Removal</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Roof Lining &amp; Carpet Deep Extraction</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Anti-Bacterial Odor Sanitization</li>
+                    </ul>
+                    <div class="service-card-modern__actions">
+                        <a href="#" class="btn btn--whatsapp btn--sm book-service-btn" data-service="Complete Dry Cleaning">Book on WhatsApp</a>
+                        <a href="tel:+919999746003" class="btn btn--outline btn--sm">Call</a>
+                    </div>
+                </div>
+
+                <!-- 2. Engine Inspection & Care -->
+                <div class="service-card-modern fade-in">
+                    <div class="service-card-modern__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01M17 12h.01M7 12h.01M6 2v4M18 2v4M6 18v4M18 18v4"/></svg>
+                    </div>
+                    <span class="service-card-modern__tag">Diagnostics</span>
+                    <div class="service-card-modern__title">Engine Inspection</div>
+                    <div class="service-card-modern__desc">
+                        Comprehensive mechanical inspection of engine bay components, fluids, belts, battery health, and fuel delivery checkup.
+                    </div>
+                    <ul class="service-card-modern__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Multi-Point Engine Component Check</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Battery &amp; Alternator Voltage Test</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Fluid Levels &amp; Hose Leak Examination</li>
+                    </ul>
+                    <div class="service-card-modern__actions">
+                        <a href="#" class="btn btn--whatsapp btn--sm book-service-btn" data-service="Engine Inspection">Book on WhatsApp</a>
+                        <a href="tel:+919999746003" class="btn btn--outline btn--sm">Call</a>
+                    </div>
+                </div>
+
+                <!-- 3. Rubbing Polish -->
+                <div class="service-card-modern fade-in">
+                    <div class="service-card-modern__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <span class="service-card-modern__tag">Paint Correction</span>
+                    <div class="service-card-modern__title">Rubbing Polish</div>
+                    <div class="service-card-modern__desc">
+                        Eliminates swirl marks, light surface scratches, oxidation, and stubborn dullness to revive your paint's original depth.
+                    </div>
+                    <ul class="service-card-modern__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Light Scratch &amp; Swirl Removal</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Clear Coat Oxidation Clearing</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Machine Polisher Smooth Refinement</li>
+                    </ul>
+                    <div class="service-card-modern__actions">
+                        <a href="#" class="btn btn--whatsapp btn--sm book-service-btn" data-service="Rubbing Polish">Book on WhatsApp</a>
+                        <a href="tel:+919999746003" class="btn btn--outline btn--sm">Call</a>
+                    </div>
+                </div>
+
+                <!-- 4. Bodyshop Polish -->
+                <div class="service-card-modern fade-in">
+                    <div class="service-card-modern__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="service-card-modern__tag">Showroom Gloss</span>
+                    <div class="service-card-modern__title">Bodyshop Polish</div>
+                    <div class="service-card-modern__desc">
+                        Ultra-high-gloss dual action body polishing that delivers a wet-look mirror reflection and seals clear coats with UV blockers.
+                    </div>
+                    <ul class="service-card-modern__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Deep Mirror Wet Gloss Finish</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> UV &amp; Environmental Dust Barrier</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Paint Color Depth Intensification</li>
+                    </ul>
+                    <div class="service-card-modern__actions">
+                        <a href="#" class="btn btn--whatsapp btn--sm book-service-btn" data-service="Bodyshop Polish">Book on WhatsApp</a>
+                        <a href="tel:+919999746003" class="btn btn--outline btn--sm">Call</a>
+                    </div>
+                </div>
+
+                <!-- 5. Glass Coating -->
+                <div class="service-card-modern fade-in">
+                    <div class="service-card-modern__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
+                    </div>
+                    <span class="service-card-modern__tag">Hydrophobic Shield</span>
+                    <div class="service-card-modern__title">Glass Coating</div>
+                    <div class="service-card-modern__desc">
+                        Hydrophobic ceramic nano-coating for windshield and all window glass for extreme water repellency and night driving clarity.
+                    </div>
+                    <ul class="service-card-modern__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Rain Water Beading &amp; Roll-Off</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Glare Reduction &amp; Clarity in Storms</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Hard Water Spot Prevention</li>
+                    </ul>
+                    <div class="service-card-modern__actions">
+                        <a href="#" class="btn btn--whatsapp btn--sm book-service-btn" data-service="Glass Coating">Book on WhatsApp</a>
+                        <a href="tel:+919999746003" class="btn btn--outline btn--sm">Call</a>
+                    </div>
+                </div>
+
+                <!-- 6. Engine Coating & Dressing -->
+                <div class="service-card-modern fade-in">
+                    <div class="service-card-modern__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <span class="service-card-modern__tag">Underhood Armor</span>
+                    <div class="service-card-modern__title">Engine Coating</div>
+                    <div class="service-card-modern__desc">
+                        High-temperature protective sealant for hoses, wiring, plastic covers, and metal parts against dust, moisture, and corrosion.
+                    </div>
+                    <ul class="service-card-modern__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Heat-Resistant Protective Seal</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Repels Oil, Grime &amp; Rodent Damage</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Factory OEM Satin Engine Look</li>
+                    </ul>
+                    <div class="service-card-modern__actions">
+                        <a href="#" class="btn btn--whatsapp btn--sm book-service-btn" data-service="Engine Coating">Book on WhatsApp</a>
+                        <a href="tel:+919999746003" class="btn btn--outline btn--sm">Call</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Banner -->
+            <div class="booking-banner fade-in">
+                <div class="booking-banner__content">
+                    <div class="booking-banner__title">Book Your Doorstep Slot Today</div>
+                    <div class="booking-banner__sub">
+                        Save time and enjoy professional car detailing without driving to a workshop. Share your location and vehicle model on WhatsApp for instant booking.
+                    </div>
+                </div>
+                <div class="booking-banner__btns">
+                    <a id="home-service-wa-main" href="#" class="btn btn--whatsapp btn--lg">Book Doorstep Service</a>
+                    <a href="tel:+919999746003" class="btn btn--outline btn--lg">Call Direct</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== HOW IT WORKS ====== -->
+    <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Seamless Process</span>
+                <h2 class="section-title">How <span>Doorstep Service</span> Works</h2>
+                <p class="section-sub">4 easy steps to get expert car care right outside your door.</p>
+            </div>
+
+            <div class="how-it-works-grid">
+                <div class="how-step fade-in">
+                    <div class="how-step__num">01</div>
+                    <div class="how-step__title">Choose Services</div>
+                    <div class="how-step__desc">Select single services or combine dry cleaning, rubbing, and glass coating into a custom package.</div>
+                </div>
+                <div class="how-step fade-in">
+                    <div class="how-step__num">02</div>
+                    <div class="how-step__title">Share Location &amp; Time</div>
+                    <div class="how-step__desc">Message us your address, car model, and preferred date/time slot on WhatsApp.</div>
+                </div>
+                <div class="how-step fade-in">
+                    <div class="how-step__num">03</div>
+                    <div class="how-step__title">Doorstep Arrival</div>
+                    <div class="how-step__desc">Our certified detailing team arrives with all specialized equipment and 4M chemical products.</div>
+                </div>
+                <div class="how-step fade-in">
+                    <div class="how-step__num">04</div>
+                    <div class="how-step__title">Inspection &amp; Drive</div>
+                    <div class="how-step__desc">Inspect the mirror finish and sanitized interior before payment. Enjoy showroom glory at home!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo-name">4M Autotech</div>
+                    <span class="footer__logo-sub">Khawaja Garib Nawaz Car Detailing</span>
+                    <p class="footer__tagline">
+                        Premium car care products and professional detailing services.
+                        Protecting your vehicle with expert-grade solutions.
+                    </p>
+                    <div class="footer__socials" id="footer-socials"></div>
+                </div>
+                <div>
+                    <div class="footer__col-title">Quick Links</div>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About Us</a></li>
+                        <li><a href="products.html" class="footer__link">Products</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="home-service.html" class="footer__link">Home Service</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Services</div>
+                    <ul class="footer__links" id="footer-services-list"></ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Contact</div>
+                    <div class="footer__contact-list" id="footer-contact-list"></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright" id="footer-copyright"></div>
+                <div class="footer__gst" id="footer-gst"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/icons.js"></script>
+    <script>
+    (function() {
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobile-nav').classList.toggle('open');
+        });
+
+        // WhatsApp action
+        const mainWaBtn = document.getElementById('home-service-wa-main');
+        if (mainWaBtn) {
+            mainWaBtn.href = whatsappUrl(SITE_CONFIG.waMessages.homeService || "Hello 4M Autotech, I would like to book a Doorstep Car Care / Home Service.");
+        }
+
+        // Per-service dynamic WhatsApp buttons
+        document.querySelectorAll('.book-service-btn').forEach(btn => {
+            const serviceName = btn.dataset.service;
+            btn.href = whatsappUrl(`Hello 4M Autotech, I would like to book the '${serviceName}' Home/Doorstep Service for my vehicle.`);
+        });
+
+        // Footer Socials
+        const socials = document.getElementById('footer-socials');
+        const socialLinks = [
+            { iconName: 'facebook',  url: SITE_CONFIG.facebook,  label: 'Facebook' },
+            { iconName: 'instagram', url: SITE_CONFIG.instagram, label: 'Instagram' },
+            { iconName: 'youtube',   url: SITE_CONFIG.youtube,   label: 'YouTube' },
+        ];
+        socialLinks.forEach(s => {
+            if (!s.url) return;
+            const a = document.createElement('a');
+            a.href = s.url;
+            a.className = 'footer__social';
+            a.title = s.label;
+            a.innerHTML = icon(s.iconName, '18px');
+            a.target = '_blank';
+            a.rel = 'noopener';
+            socials.appendChild(a);
+        });
+
+        // Footer Services List
+        const sList = document.getElementById('footer-services-list');
+        SERVICES.slice(0, 6).forEach(s => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="services.html#${s.id}" class="footer__link">${s.name}</a>`;
+            sList.appendChild(li);
+        });
+
+        // Footer Contact
+        document.getElementById('footer-contact-list').innerHTML = `
+            <div class="footer__contact-item">${icon('phone','16px')}<a href="${callUrl()}">${SITE_CONFIG.phoneDisplay}</a></div>
+            <div class="footer__contact-item">${icon('email','16px')}<a href="mailto:${SITE_CONFIG.email}">${SITE_CONFIG.email}</a></div>
+            <div class="footer__contact-item">${icon('location','16px')}<span>${SITE_CONFIG.address.replace(/\n/g, ', ')}</span></div>
+        `;
+
+        document.getElementById('footer-copyright').textContent = `© ${new Date().getFullYear()} 4M Autotech. All rights reserved.`;
+        document.getElementById('footer-gst').textContent = `GST: ${SITE_CONFIG.gst}`;
+
+        // Intersection Observer
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    })();
+    </script>
+</body>
+</html>

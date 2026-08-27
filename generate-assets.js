@@ -215,6 +215,50 @@ const products = [
     type: 'spray',
     iconText: 'RAIL DUST • CHEMICAL SPOTS',
     formula: 'HEAVY DECONTAMINATION AGENT'
+  },
+  { 
+    id: 'ac-duct-cleaner', 
+    name: 'AC DUCT CLEANING', 
+    sub: 'FOAMING DISINFECTANT & ODOR PURIFIER', 
+    color: '#00ACC1', 
+    colorDark: '#006064', 
+    tag: '300 ML', 
+    type: 'aerosol',
+    iconText: 'AIR VENTS • EVAPORATOR • AC',
+    formula: 'ANTI-BACTERIAL PRO-FRESH'
+  },
+  { 
+    id: 'rust-removal', 
+    name: 'RUST REMOVAL', 
+    sub: 'RAPID OXIDATION & CORROSION DISSOLVER', 
+    color: '#E65100', 
+    colorDark: '#BF360C', 
+    tag: '300 ML', 
+    type: 'spray',
+    iconText: 'METALS • BOLTS • CHASSIS',
+    formula: 'PENETRATING RUST CONVERTER'
+  },
+  { 
+    id: 'chain-cleaner', 
+    name: 'CHAIN CLEANER', 
+    sub: 'HEAVY DUTY DRIVE CHAIN DEGREASER', 
+    color: '#43A047', 
+    colorDark: '#1B5E20', 
+    tag: '300 ML', 
+    type: 'aerosol',
+    iconText: 'O/X/Z RINGS • SPROCKETS',
+    formula: 'POWER DEGREASING SPRAY'
+  },
+  { 
+    id: 'chain-lubricant', 
+    name: 'CHAIN LUBRICANT', 
+    sub: 'SYNTHETIC ANTI-FLING CHAIN LUBE', 
+    color: '#FBC02D', 
+    colorDark: '#F57F17', 
+    tag: '300 ML', 
+    type: 'aerosol',
+    iconText: 'HIGH SPEED • WATER RESISTANT',
+    formula: 'PTFE CERAMIC COATING LUBE'
   }
 ];
 

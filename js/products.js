@@ -14,8 +14,7 @@ const PRODUCTS = [
         accentColor: "#D71920",
         accentLight: "rgba(215,25,32,0.15)",
         size: "300 ml",
-        mrp: "₹499.00",
-        mrpNote: "including all taxes",
+
         image: "assets/images/products/fuel-additive.png",
         imagePlaceholder: "#D71920",
         description: "4M Autotech Fuel Additive is a high performance fuel system cleaner specially formulated to clean and protect the entire fuel system. It removes deposits, improves fuel economy, reduces emissions and enhances engine performance.",
@@ -144,8 +143,7 @@ const PRODUCTS = [
         accentColor: "#D71920",
         accentLight: "rgba(215,25,32,0.15)",
         size: "300 ml",
-        mrp: "₹499.00",
-        mrpNote: "including all taxes",
+
         image: "assets/images/products/brake-cleaner.png",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Brake Cleaner is a heavy duty cleaner formulated to quickly clean brake and clutch components by removing oil, grease and brake fluid residue.",
@@ -621,6 +619,141 @@ const PRODUCTS = [
             "Keep out of reach of children.",
             "Avoid contact with eyes.",
             "Do not use on painted surfaces."
+        ]
+    },
+    {
+        id: "ac-duct-cleaner",
+        name: "AC Duct Cleaning",
+        subtitle: "Foaming Disinfectant & Odor Purifier",
+        tagline: "PURIFY • DISINFECT • REFRESH",
+        category: ["interior-care", "cleaners"],
+        categoryLabel: "Interior Care",
+        accentColor: "#00ACC1",
+        accentLight: "rgba(0,172,193,0.15)",
+        size: "300 ml",
+        image: "assets/images/products/ac-duct-cleaner.svg",
+        imagePlaceholder: "#00ACC1",
+        description: "4M Autotech AC Duct Cleaner is an anti-bacterial foaming aerosol formula that deeply cleans evaporator coils, vents, and air ducts, eliminating mold, bacteria, and foul odors for long-lasting cabin freshness.",
+        benefits: [
+            "Eliminates 99.9% mold, mildew & bacteria",
+            "Removes foul AC damp smell",
+            "Improves cooling airflow efficiency",
+            "Includes extended flexible application hose",
+            "Leaves a refreshing natural fragrance",
+            "Safe for all automotive AC systems"
+        ],
+        howToUse: [
+            "Turn off vehicle ignition and AC system.",
+            "Insert the extended application tube deep into AC vents.",
+            "Spray foam generously until duct fills up.",
+            "Let the active foam soak and dissolve grime for 10-15 minutes.",
+            "Start engine, turn AC to MAX fan speed on fresh air mode for 5 minutes."
+        ],
+        recommendedUse: "Dashboard AC vents, Center vents, Rear blower vents, Evaporator ducting.",
+        caution: [
+            "Keep out of reach of children.",
+            "Do not spray near electrical switches or dashboard displays.",
+            "Use in a well-ventilated area.",
+            "Aerosol contents under pressure."
+        ]
+    },
+    {
+        id: "rust-removal",
+        name: "Rust Removal",
+        subtitle: "Rapid Oxidation & Corrosion Dissolver",
+        tagline: "DISSOLVE • RESTORE • PROTECT",
+        category: ["engine-care", "protection", "cleaners"],
+        categoryLabel: "Protection",
+        accentColor: "#E65100",
+        accentLight: "rgba(230,81,0,0.15)",
+        size: "300 ml",
+        image: "assets/images/products/rust-removal.svg",
+        imagePlaceholder: "#E65100",
+        description: "4M Autotech Rust Removal quickly dissolves stubborn rust, surface oxidation, and scale on automotive metal components without damaging base metal or threads.",
+        benefits: [
+            "Fast-acting rust and oxidation breakdown",
+            "Penetrates seized nuts, bolts, and chassis joints",
+            "Non-acidic surface-safe chemical formulation",
+            "Leaves an anti-corrosion protective film",
+            "Restores bare metal finish"
+        ],
+        howToUse: [
+            "Spray directly onto rusted metal or seized fastener.",
+            "Allow product to penetrate for 3 to 5 minutes.",
+            "Use a wire brush or microfiber to scrub dissolved rust.",
+            "Wipe clean and follow up with protective coating."
+        ],
+        recommendedUse: "Exhaust pipes, Chassis nuts & bolts, Suspension components, Tools, Battery trays.",
+        caution: [
+            "Avoid contact with vehicle paint and polished clear coats.",
+            "Wear safety gloves during application.",
+            "Store in a cool and dry place."
+        ]
+    },
+    {
+        id: "chain-cleaner",
+        name: "Chain Cleaner",
+        subtitle: "Heavy Duty Drive Chain Degreaser",
+        tagline: "POWER DEGREASING • QUICK DRY • RING SAFE",
+        category: ["engine-care", "cleaners"],
+        categoryLabel: "Engine Care",
+        accentColor: "#43A047",
+        accentLight: "rgba(67,160,71,0.15)",
+        size: "300 ml",
+        image: "assets/images/products/chain-cleaner.svg",
+        imagePlaceholder: "#43A047",
+        description: "4M Autotech Chain Cleaner is an ultra-high-pressure cleaning spray engineered to dissolve hardened grease, road grime, and chain oil deposits without harming O-Ring, X-Ring, or Z-Ring seals.",
+        benefits: [
+            "Instantly blasts away sticky sludge and road grit",
+            "100% safe for O/X/Z-Ring rubber seals",
+            "Rapid evaporation with zero oily residue",
+            "Reduces drivetrain friction and sprocket wear",
+            "Prepares chain for optimal lube adhesion"
+        ],
+        howToUse: [
+            "Place bike on center stand or paddock stand.",
+            "Spray generously onto chain while slowly rotating rear wheel.",
+            "Allow degreaser to break down dirt, scrub with grunge brush if needed.",
+            "Wipe dry with clean cloth before applying chain lubricant."
+        ],
+        recommendedUse: "Motorcycle drive chains, Bicycle chains, Industrial drive linkages, Sprockets.",
+        caution: [
+            "Do not apply while motorcycle engine is running in gear.",
+            "Keep away from brake discs and pads.",
+            "Extremely flammable aerosol."
+        ]
+    },
+    {
+        id: "chain-lubricant",
+        name: "Chain Lubricant",
+        subtitle: "Synthetic Anti-Fling Chain Lube",
+        tagline: "HIGH SPEED • NO FLING • WATERPROOF",
+        category: ["engine-care", "protection"],
+        categoryLabel: "Engine Care",
+        accentColor: "#FBC02D",
+        accentLight: "rgba(251,192,45,0.15)",
+        size: "300 ml",
+        image: "assets/images/products/chain-lubricant.svg",
+        imagePlaceholder: "#FBC02D",
+        description: "4M Autotech Synthetic Chain Lubricant utilizes high-tack PTFE ceramic polymers to provide ultra-durable boundary lubrication, preventing metal-to-metal wear, corrosion, and high-speed fling.",
+        benefits: [
+            "Advanced anti-fling tack formula",
+            "Resists heavy rain and high-pressure water wash",
+            "PTFE & ceramic micro-barrier for ultra-smooth power delivery",
+            "Protects chain links and sprockets from friction elongation",
+            "All-weather extreme temperature stability"
+        ],
+        howToUse: [
+            "Ensure chain is clean and dry using 4M Chain Cleaner.",
+            "Shake can vigorously for 30 seconds.",
+            "Spray evenly on the inside run of chain while rotating wheel.",
+            "Allow 15-20 minutes curing time before riding for anti-fling lock."
+        ],
+        recommendedUse: "High-performance superbikes, Cruiser & commuter motorcycles, Go-karts, ATVs.",
+        caution: [
+            "Do not spray on tyre treads, brake discs or calipers.",
+            "Shake well before each use.",
+            "Store below 50°C."
         ]
     }
 ];
