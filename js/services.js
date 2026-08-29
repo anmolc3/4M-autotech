@@ -18,7 +18,7 @@ const SERVICES = [
             "Pre & post paint inspection",
             "Finished with paint sealant"
         ],
-        image: "assets/images/services/paint-correction.svg",
+        image: "assets/images/services/paint-correction.webp",
         imagePlaceholder: "#1B1B2F",
         accentColor: "#D71920",
         category: "paint"
@@ -37,7 +37,7 @@ const SERVICES = [
             "Years of lasting protection",
             "Mirror-like gloss finish"
         ],
-        image: "assets/images/services/ceramic-coating.svg",
+        image: "assets/images/services/ceramic-coating.webp",
         imagePlaceholder: "#0D1B2A",
         accentColor: "#1B4F8C",
         category: "protection"
@@ -56,7 +56,7 @@ const SERVICES = [
             "Enhances resale value",
             "Available for full vehicle or high-impact zones"
         ],
-        image: "assets/images/services/ppf.svg",
+        image: "assets/images/services/ppf.webp",
         imagePlaceholder: "#0F2027",
         accentColor: "#607D8B",
         category: "protection"
@@ -76,7 +76,7 @@ const SERVICES = [
             "Glass & mirror cleaning",
             "Odor elimination & sanitization"
         ],
-        image: "assets/images/services/interior-cleaning.svg",
+        image: "assets/images/services/interior-cleaning.webp",
         imagePlaceholder: "#1A1A2E",
         accentColor: "#2E7D32",
         category: "interior"
@@ -96,7 +96,7 @@ const SERVICES = [
             "Glass polishing & cleaning",
             "Chrome & trim care"
         ],
-        image: "assets/images/services/exterior-detailing.svg",
+        image: "assets/images/services/exterior-detailing.webp",
         imagePlaceholder: "#12191F",
         accentColor: "#E6A817",
         category: "exterior"
@@ -115,7 +115,7 @@ const SERVICES = [
             "Engine cover detailing",
             "Safe on all modern engine bays"
         ],
-        image: "assets/images/services/engine-bay.svg",
+        image: "assets/images/services/engine-bay.webp",
         imagePlaceholder: "#1A1A1A",
         accentColor: "#BF360C",
         category: "engine"
@@ -141,7 +141,7 @@ const SERVICES = [
             "Perfume & fragrance treatment",
             "Final quality inspection"
         ],
-        image: "assets/images/services/car-spa.svg",
+        image: "assets/images/services/car-spa.webp",
         imagePlaceholder: "#0A0A0A",
         accentColor: "#D71920",
         category: "package",

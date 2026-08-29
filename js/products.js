@@ -15,7 +15,7 @@ const PRODUCTS = [
         accentLight: "rgba(215,25,32,0.15)",
         size: "300 ml",
 
-        image: "assets/images/products/fuel-additive.png",
+        image: "assets/images/products/fuel-additive.webp",
         imagePlaceholder: "#D71920",
         description: "4M Autotech Fuel Additive is a high performance fuel system cleaner specially formulated to clean and protect the entire fuel system. It removes deposits, improves fuel economy, reduces emissions and enhances engine performance.",
         benefits: [
@@ -57,7 +57,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/tyre-polish.png",
+        image: "assets/images/products/tyre-polish.webp",
         imagePlaceholder: "#E6A817",
         description: "4M Autotech Tyre Polish is a premium quality tyre care product designed to give your tyres a deep black shine and long lasting protection.",
         benefits: [
@@ -102,7 +102,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/black-garnish.png",
+        image: "assets/images/products/black-garnish.webp",
         imagePlaceholder: "#E6A817",
         description: "Brings New Life to All Exterior Black Parts. 4M Autotech Black Garnish instantly restores the original black appearance of all exterior plastic and rubber trims.",
         benefits: [
@@ -144,7 +144,7 @@ const PRODUCTS = [
         accentLight: "rgba(215,25,32,0.15)",
         size: "300 ml",
 
-        image: "assets/images/products/brake-cleaner.png",
+        image: "assets/images/products/brake-cleaner.webp",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Brake Cleaner is a heavy duty cleaner formulated to quickly clean brake and clutch components by removing oil, grease and brake fluid residue.",
         benefits: [
@@ -186,7 +186,7 @@ const PRODUCTS = [
         size: "250 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/head-light-cleaner.png",
+        image: "assets/images/products/head-light-cleaner.webp",
         imagePlaceholder: "#1B4F8C",
         description: "Crystal Clear Vision, Safer Driving. 4M Autotech Head Light Cleaner removes yellowing and oxidation to restore clarity and brightness to all headlights.",
         benefits: [
@@ -231,7 +231,7 @@ const PRODUCTS = [
         size: "250 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/paint-spot-remover.png",
+        image: "assets/images/products/paint-spot-remover.webp",
         imagePlaceholder: "#D71920",
         description: "4M Autotech Paint Spot Remover is a specially developed formula to remove paint spots, over spray, water spots, rail dust and other stubborn contaminants from your vehicle's painted surface safely and effectively without damaging or scratching the original paint.",
         benefits: [
@@ -277,7 +277,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/foam-wash-cleaner.png",
+        image: "assets/images/products/foam-wash-cleaner.webp",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Foam Wash Cleaner is a high foam car shampoo that delivers thick foam for deep cleaning, removing dirt, mud and road film safely.",
         benefits: [
@@ -320,7 +320,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹349.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/seat-dry-cleaner.png",
+        image: "assets/images/products/seat-dry-cleaner.webp",
         imagePlaceholder: "#1B4F8C",
         description: "4M Autotech Seat Dry Cleaner uses a dry foam formula for powerful interior cleaning without water. Removes stains, dirt and spills while neutralizing odors.",
         benefits: [
@@ -363,7 +363,7 @@ const PRODUCTS = [
         size: "300 ml",
         mrp: "₹399.00",
         mrpNote: "including all taxes",
-        image: "assets/images/products/dashboard-polish.png",
+        image: "assets/images/products/dashboard-polish.webp",
         imagePlaceholder: "#2E7D32",
         description: "4M Autotech Dashboard Polish is a premium interior care product that restores the original look of your dashboard and all interior surfaces with long-lasting shine and UV protection.",
         benefits: [
@@ -403,7 +403,7 @@ const PRODUCTS = [
         accentLight: "rgba(139,69,19,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/anti-rust-coating.png",
+        image: "assets/images/products/anti-rust-coating.webp",
         imagePlaceholder: "#8B4513",
         description: "4M Autotech Anti Rust Coating provides powerful protection against rust and corrosion on exposed metal surfaces, extending the life of your vehicle's body panels and components.",
         benefits: [
@@ -436,7 +436,7 @@ const PRODUCTS = [
         accentLight: "rgba(96,125,139,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/rubbing-polish.png",
+        image: "assets/images/products/rubbing-polish.webp",
         imagePlaceholder: "#607D8B",
         description: "4M Autotech Rubbing Polish is a paint restoration formula that removes light scratches, swirl marks and surface imperfections to restore the original gloss and depth of your vehicle's paint.",
         benefits: [
@@ -469,7 +469,7 @@ const PRODUCTS = [
         accentLight: "rgba(69,90,100,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/body-polish.png",
+        image: "assets/images/products/body-polish.webp",
         imagePlaceholder: "#455A64",
         description: "4M Autotech Body Polish delivers a brilliant shine to your vehicle's entire body surface while providing a protective layer against environmental contaminants.",
         benefits: [
@@ -502,7 +502,7 @@ const PRODUCTS = [
         accentLight: "rgba(84,110,122,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/teflon-coating.png",
+        image: "assets/images/products/teflon-coating.webp",
         imagePlaceholder: "#546E7A",
         description: "4M Autotech Teflon Coating provides an advanced protective layer on your vehicle's paint surface, delivering long-lasting gloss and protection against environmental damage.",
         benefits: [
@@ -536,7 +536,7 @@ const PRODUCTS = [
         accentLight: "rgba(245,127,23,0.15)",
         size: "50 g",
         mrp: null,
-        image: "assets/images/products/battery-jelly.png",
+        image: "assets/images/products/battery-jelly.webp",
         imagePlaceholder: "#F57F17",
         description: "4M Autotech Battery Jelly protects battery terminals and connections from corrosion, ensuring reliable electrical contact and extended battery life.",
         benefits: [
@@ -568,7 +568,7 @@ const PRODUCTS = [
         accentLight: "rgba(21,101,192,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/injector-cleaner.png",
+        image: "assets/images/products/injector-cleaner.webp",
         imagePlaceholder: "#1565C0",
         description: "4M Autotech Injector Cleaner is specially formulated to clean fuel injectors and remove deposits that affect performance and fuel efficiency.",
         benefits: [
@@ -600,7 +600,7 @@ const PRODUCTS = [
         accentLight: "rgba(158,158,158,0.15)",
         size: "300 ml",
         mrp: null,
-        image: "assets/images/products/chrome-cleaner.png",
+        image: "assets/images/products/chrome-cleaner.webp",
         imagePlaceholder: "#9E9E9E",
         description: "4M Autotech Chrome Cleaner restores the brilliant shine of all chrome and metal surfaces, removing tarnish, oxidation and water spots.",
         benefits: [
@@ -631,7 +631,7 @@ const PRODUCTS = [
         accentColor: "#00ACC1",
         accentLight: "rgba(0,172,193,0.15)",
         size: "300 ml",
-        image: "assets/images/products/ac-duct-cleaner.svg",
+        image: "assets/images/products/ac-duct-cleaner.webp",
         imagePlaceholder: "#00ACC1",
         description: "4M Autotech AC Duct Cleaner is an anti-bacterial foaming aerosol formula that deeply cleans evaporator coils, vents, and air ducts, eliminating mold, bacteria, and foul odors for long-lasting cabin freshness.",
         benefits: [
@@ -667,7 +667,7 @@ const PRODUCTS = [
         accentColor: "#E65100",
         accentLight: "rgba(230,81,0,0.15)",
         size: "300 ml",
-        image: "assets/images/products/rust-removal.svg",
+        image: "assets/images/products/rust-removal.webp",
         imagePlaceholder: "#E65100",
         description: "4M Autotech Rust Removal quickly dissolves stubborn rust, surface oxidation, and scale on automotive metal components without damaging base metal or threads.",
         benefits: [
@@ -700,7 +700,7 @@ const PRODUCTS = [
         accentColor: "#43A047",
         accentLight: "rgba(67,160,71,0.15)",
         size: "300 ml",
-        image: "assets/images/products/chain-cleaner.svg",
+        image: "assets/images/products/chain-cleaner.webp",
         imagePlaceholder: "#43A047",
         description: "4M Autotech Chain Cleaner is an ultra-high-pressure cleaning spray engineered to dissolve hardened grease, road grime, and chain oil deposits without harming O-Ring, X-Ring, or Z-Ring seals.",
         benefits: [
@@ -734,7 +734,7 @@ const PRODUCTS = [
         accentColor: "#FBC02D",
         accentLight: "rgba(251,192,45,0.15)",
         size: "300 ml",
-        image: "assets/images/products/chain-lubricant.svg",
+        image: "assets/images/products/chain-lubricant.webp",
         imagePlaceholder: "#FBC02D",
         description: "4M Autotech Synthetic Chain Lubricant utilizes high-tack PTFE ceramic polymers to provide ultra-durable boundary lubrication, preventing metal-to-metal wear, corrosion, and high-speed fling.",
         benefits: [
@@ -768,7 +768,7 @@ const PRODUCTS = [
         accentColor: "#7B1FA2",
         accentLight: "rgba(123,31,162,0.15)",
         size: "300 ml",
-        image: "assets/images/products/bike-body-polish.svg",
+        image: "assets/images/products/bike-body-polish.webp",
         imagePlaceholder: "#7B1FA2",
         description: "4M Autotech Bike Body Polish is a premium German formula specially developed to eliminate swirl marks, light scratches, and oxidation while restoring depth and gloss on all motorcycle finishes.",
         benefits: [
@@ -803,7 +803,7 @@ const PRODUCTS = [
         accentColor: "#2E7D32",
         accentLight: "rgba(46,125,50,0.15)",
         size: "60 ml",
-        image: "assets/images/products/bike-engine-flushing.svg",
+        image: "assets/images/products/bike-engine-flushing.webp",
         imagePlaceholder: "#2E7D32",
         description: "4M Autotech Bike Engine Flushing is a high-performance German formula designed to deeply clean internal 4-stroke motorcycle engine components, dissolving sludge, gum, carbon, and varnish deposits before oil change.",
         benefits: [
@@ -838,7 +838,7 @@ const PRODUCTS = [
         accentColor: "#D32F2F",
         accentLight: "rgba(211,47,47,0.15)",
         size: "60 ml",
-        image: "assets/images/products/bike-chain-lube.svg",
+        image: "assets/images/products/bike-chain-lube.webp",
         imagePlaceholder: "#D32F2F",
         description: "4M Autotech Bike Chain Lubricant Spray provides high-tack synthetic lubrication engineered to penetrate deep into pin bushings, preventing chain elongation and resisting water wash-off without messy fling.",
         benefits: [
@@ -871,7 +871,7 @@ const PRODUCTS = [
         accentColor: "#0288D1",
         accentLight: "rgba(2,136,209,0.15)",
         size: "500 ml",
-        image: "assets/images/products/monogram-cleaner.svg",
+        image: "assets/images/products/monogram-cleaner.webp",
         imagePlaceholder: "#0288D1",
         description: "4M Autotech Monogram Cleaner Spray is specially formulated to lift and dissolve stubborn dirt, water scale, and road grime from vehicle badges, monograms, logos, and spare wheel covers without scratching.",
         benefits: [
@@ -905,7 +905,7 @@ const PRODUCTS = [
         accentColor: "#C62828",
         accentLight: "rgba(198,40,40,0.15)",
         size: "600 ml",
-        image: "assets/images/products/brake-disc-cleaner.svg",
+        image: "assets/images/products/brake-disc-cleaner.webp",
         imagePlaceholder: "#C62828",
         description: "4M Autotech Brake Disc & Parts Cleaner is an industrial-strength aerosol degreaser formulated to blast away stubborn brake dust, fluid, oil, and road grime from discs, calipers, and pads.",
         benefits: [
@@ -938,7 +938,7 @@ const PRODUCTS = [
         accentColor: "#E65100",
         accentLight: "rgba(230,81,0,0.15)",
         size: "60 ml",
-        image: "assets/images/products/bike-rust-mast.svg",
+        image: "assets/images/products/bike-rust-mast.webp",
         imagePlaceholder: "#E65100",
         description: "4M Autotech Bike Rust Mast is an all-angle 360° penetrant and lubricant spray that rapidly breaks down rust on seized bolts, linkages, footrests, and cables while driving out moisture.",
         benefits: [
@@ -971,7 +971,7 @@ const PRODUCTS = [
         accentColor: "#1565C0",
         accentLight: "rgba(21,101,192,0.15)",
         size: "60 ml",
-        image: "assets/images/products/bike-teflon-coating.svg",
+        image: "assets/images/products/bike-teflon-coating.webp",
         imagePlaceholder: "#1565C0",
         description: "4M Autotech Bike Teflon Coating is a PTFE molecular protective spray that creates an invisible hydrophobic shield over fuel tanks, fairings, and metal parts to repel dust, water, and UV fading.",
         benefits: [
@@ -1005,7 +1005,7 @@ const PRODUCTS = [
         accentColor: "#00838F",
         accentLight: "rgba(0,131,143,0.15)",
         size: "60 ml",
-        image: "assets/images/products/bike-chain-cleaner.svg",
+        image: "assets/images/products/bike-chain-cleaner.webp",
         imagePlaceholder: "#00838F",
         description: "4M Autotech Bike Chain Cleaner is a specialized compact degreaser designed to instantly dissolve oil, grit, and old chain lube from motorcycle drive chains without damaging delicate rubber O/X/Z-Rings.",
         benefits: [
