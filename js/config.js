@@ -13,7 +13,12 @@ const SITE_CONFIG = {
     phone: "+919999746003",
     phoneDisplay: "+91 9999746003",
     whatsapp: "+919999746003",
-    email: "khawajagaribnawaz66@gmail.com",
+    email: "info@khawajagaribnawaz.com",          // primary (used in footers)
+    emails: [
+        { label: "General Enquiries",  address: "info@khawajagaribnawaz.com" },
+        { label: "Administration",     address: "admin@khawajagaribnawaz.com" },
+        { label: "Sales Manager",      address: "salemanager@khawajagaribnawaz.com" }
+    ],
 
     // Address
     address: "H. No. 820, Block B, Phase 2,\nGautampuri, Badarpur,\nNew Delhi - 110044",
@@ -22,7 +27,6 @@ const SITE_CONFIG = {
     addressLine3: "New Delhi - 110044",
 
     // Legal
-    gst: "07AINPY5452B1ZZ",
     website: "www.khawajagaribnawazcardetailing.com",
 
     // Google Maps — insert your embed URL here

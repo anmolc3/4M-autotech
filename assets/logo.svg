@@ -15,9 +15,6 @@
     </filter>
   </defs>
 
-  <!-- background -->
-  <rect x="0" y="0" width="700" height="460" rx="20" fill="#161819"/>
-
   <!-- big 4M group, italic slant -->
   <g transform="translate(70,0) skewX(-10)">
     <!-- Red 4 -->

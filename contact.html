@@ -10,6 +10,7 @@
     <link rel="canonical" href="https://www.khawajagaribnawazcardetailing.com/contact.html">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        /* ── Hero actions ── */
         .contact-hero-actions {
             display: flex;
             gap: 14px;
@@ -17,19 +18,15 @@
             flex-wrap: wrap;
         }
 
+        /* ── Two-col grid ── */
         .contact-page-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 48px;
+            gap: 40px;
             align-items: start;
         }
 
-        @media (max-width: 768px) {
-            .contact-page-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
+        /* ── Contact Card ── */
         .contact-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -41,7 +38,7 @@
         .contact-card__header {
             background: var(--surface);
             border-bottom: 1px solid var(--border);
-            padding: 20px 24px;
+            padding: 18px 24px;
             font-family: var(--font-heading);
             font-size: 12px;
             font-weight: 600;
@@ -57,6 +54,7 @@
             gap: 20px;
         }
 
+        /* ── Contact detail row ── */
         .contact-detail {
             display: flex;
             align-items: flex-start;
@@ -64,8 +62,8 @@
         }
 
         .contact-detail__icon {
-            width: 48px;
-            height: 48px;
+            width: 46px;
+            height: 46px;
             background: var(--red-light);
             border: 1px solid var(--border-accent);
             border-radius: 10px;
@@ -77,8 +75,8 @@
         }
 
         .contact-detail__icon svg {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
         }
 
         .contact-detail__label {
@@ -92,7 +90,7 @@
         }
 
         .contact-detail__value {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--text-primary);
             line-height: 1.5;
         }
@@ -107,11 +105,12 @@
         }
 
         .contact-detail__sub {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: var(--text-muted);
             margin-top: 2px;
         }
 
+        /* ── Map Card ── */
         .map-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -123,7 +122,7 @@
         .map-card__header {
             background: var(--surface);
             border-bottom: 1px solid var(--border);
-            padding: 20px 24px;
+            padding: 18px 24px;
             font-family: var(--font-heading);
             font-size: 12px;
             font-weight: 600;
@@ -133,7 +132,7 @@
         }
 
         .map-card__embed {
-            height: 340px;
+            height: 320px;
             background: var(--surface-2);
             display: flex;
             align-items: center;
@@ -151,77 +150,149 @@
         }
 
         .map-card__footer {
-            padding: 16px 24px;
+            padding: 14px 20px;
             border-top: 1px solid var(--border);
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
 
-        .business-hours {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+        /* ── Quick enquiry panel ── */
+        .quick-enquiry-panel {
+            margin-top: 24px;
+            background: linear-gradient(135deg, #1a0a0a, #0f0f0f);
+            border: 1px solid rgba(215,25,32,0.2);
             border-radius: var(--card-radius);
-            box-shadow: var(--shadow-card);
-            overflow: hidden;
+            padding: 28px 24px;
         }
 
-        .hours-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 24px;
-            border-bottom: 1px solid var(--border);
+        .quick-enquiry-panel .quick-enquiry-title {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+
+        .quick-enquiry-panel p {
             font-size: 0.875rem;
+            color: #CBD5E1;
+            margin-bottom: 20px;
+            line-height: 1.65;
         }
 
-        .hours-row:last-child {
-            border-bottom: none;
+        .quick-enquiry-btns {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
-        .hours-row__day {
-            color: var(--text-secondary);
+        /* ── Tablet (≤ 900px) ── */
+        @media (max-width: 900px) {
+            .contact-page-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .map-card__embed {
+                height: 280px;
+            }
         }
 
-        .hours-row__time {
-            font-family: var(--font-heading);
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            color: var(--text-primary);
+        /* ── Mobile (≤ 640px) ── */
+        @media (max-width: 640px) {
+            .contact-hero-actions {
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .contact-hero-actions .btn {
+                flex: 1 1 140px;
+                justify-content: center;
+            }
+
+            .contact-card__header,
+            .map-card__header {
+                padding: 14px 16px;
+                font-size: 11px;
+                letter-spacing: 2px;
+            }
+
+            .contact-card__body {
+                padding: 16px;
+                gap: 16px;
+            }
+
+            .contact-detail {
+                gap: 12px;
+            }
+
+            .contact-detail__icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+            }
+
+            .contact-detail__icon svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            .contact-detail__value {
+                font-size: 0.875rem;
+            }
+
+            .map-card__embed {
+                height: 240px;
+            }
+
+            .map-card__footer {
+                padding: 12px 16px;
+                flex-direction: column;
+            }
+
+            .map-card__footer .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .quick-enquiry-panel {
+                padding: 20px 16px;
+                margin-top: 20px;
+            }
+
+            .quick-enquiry-panel .quick-enquiry-title {
+                font-size: 1.15rem;
+            }
+
+            .quick-enquiry-btns {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .quick-enquiry-btns .btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
-        .legal-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-        }
+        /* ── Small phones (≤ 400px) ── */
+        @media (max-width: 400px) {
+            .contact-card__body {
+                padding: 14px 12px;
+            }
 
-        .legal-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
-            padding: 16px 20px;
-        }
+            .contact-detail__value {
+                font-size: 0.82rem;
+            }
 
-        .legal-item__label {
-            font-family: var(--font-heading);
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 6px;
-        }
-
-        .legal-item__value {
-            font-size: 0.85rem;
-            color: var(--text-primary);
-            font-family: var(--font-heading);
-            letter-spacing: 1px;
+            .map-card__embed {
+                height: 200px;
+            }
         }
     </style>
+
 </head>
 
 <body>
@@ -235,128 +306,7 @@
                 </a>
                 <ul class="nav__links">
                     <li><a href="about.html" class="nav__link" id="nav-about">About</a></li>
-                    <li class="nav__item--dropdown">
-                        <a href="products.html" class="nav__link nav__link--dropdown" id="nav-products">
-                            Products
-                            <svg class="nav__dropdown-icon" viewBox="0 0 24 24" width="12" height="12" fill="none"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </a>
-                        <div class="nav__dropdown">
-                            <div class="nav__dropdown-grid">
-                                <!-- Categories Column -->
-                                <div class="nav__dropdown-col">
-                                    <div class="nav__dropdown-title">
-                                        <svg viewBox="0 0 24 24" width="13" height="13" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <rect x="3" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="14" width="7" height="7"></rect>
-                                            <rect x="3" y="14" width="7" height="7"></rect>
-                                        </svg>
-                                        Categories
-                                    </div>
-                                    <div class="nav__dropdown-links">
-                                        <a href="products.html" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">All Products</span>
-                                        </a>
-                                        <a href="products.html?category=car-care" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">Car Care Range</span>
-                                            <span class="nav__dropdown-tag">4-Wheeler</span>
-                                        </a>
-                                        <a href="products.html?category=bike-care" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">Bike Care Range</span>
-                                            <span class="nav__dropdown-tag">2-Wheeler</span>
-                                        </a>
-                                        <a href="products.html?category=exterior-care" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">Exterior Care</span>
-                                        </a>
-                                        <a href="products.html?category=interior-care" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">Interior Care</span>
-                                        </a>
-                                        <a href="products.html?category=engine-care" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">Engine &amp; Fuel Care</span>
-                                        </a>
-                                        <a href="products.html?category=protection" class="nav__dropdown-link">
-                                            <span class="nav__dropdown-link-text">Coatings &amp; Protection</span>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Popular Products Column -->
-                                <div class="nav__dropdown-col">
-                                    <div class="nav__dropdown-title">
-                                        <svg viewBox="0 0 24 24" width="13" height="13" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        products
-                                    </div>
-                                    <div class="nav__dropdown-products">
-                                        <a href="products.html?product=fuel-additive" class="nav__dropdown-product">
-                                            <div class="nav__product-info">
-                                                <span class="nav__product-name">Fuel Additive</span>
-                                                <span class="nav__product-sub">Fuel System Cleaner • 300ml</span>
-                                            </div>
-                                        </a>
-                                        <a href="products.html?product=tyre-polish" class="nav__dropdown-product">
-                                            <div class="nav__product-info">
-                                                <span class="nav__product-name">Tyre Polish</span>
-                                                <span class="nav__product-sub">Deep Black UV Shine • ₹349</span>
-                                            </div>
-                                        </a>
-                                        <a href="products.html?product=black-garnish" class="nav__dropdown-product">
-                                            <div class="nav__product-info">
-                                                <span class="nav__product-name">Black Garnish</span>
-                                                <span class="nav__product-sub">Plastic &amp; Trim Restorer • ₹349</span>
-                                            </div>
-                                        </a>
-                                        <a href="products.html?product=brake-cleaner" class="nav__dropdown-product">
-                                            <div class="nav__product-info">
-                                                <span class="nav__product-name">Brake Cleaner</span>
-                                                <span class="nav__product-sub">Heavy Duty Quick-Dry • 300ml</span>
-                                            </div>
-                                        </a>
-                                        <a href="products.html?product=anti-rust-coating" class="nav__dropdown-product">
-                                            <div class="nav__product-info">
-                                                <span class="nav__product-name">Anti Rust Coating</span>
-                                                <span class="nav__product-sub">Underbody Protection</span>
-                                            </div>
-                                        </a>
-                                        <a href="products.html?product=bike-chain-lube" class="nav__dropdown-product">
-                                            <div class="nav__product-info">
-                                                <span class="nav__product-name">Bike Chain Lubricant</span>
-                                                <span class="nav__product-sub">High-Speed Chain Spray</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Spotlight Card -->
-                                <div class="nav__dropdown-col nav__dropdown-col--spotlight">
-                                    <div class="nav__dropdown-spotlight">
-                                        <div>
-                                            <span class="nav__spotlight-badge">FEATURED</span>
-                                            <h4 class="nav__spotlight-title">Precision Auto Care</h4>
-                                            <p class="nav__spotlight-desc">High-performance formulas designed for
-                                                maximum gloss, protection, and durability.</p>
-                                        </div>
-                                        <a href="products.html" class="nav__spotlight-btn">
-                                            View Full Catalog
-                                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    <li><a href="products.html" class="nav__link" id="nav-products">Products</a></li>
                     <li><a href="services.html" class="nav__link" id="nav-services">Services</a></li>
                     <li><a href="home-service.html" class="nav__link" id="nav-home-service">Home Service</a></li>
                     <li><a href="contact.html" class="nav__link active" id="nav-contact">Contact</a></li>
@@ -469,23 +419,7 @@
                         <div class="contact-card__header">Contact Information</div>
                         <div class="contact-card__body" id="contact-info-body"></div>
                     </div>
-                    <div style="margin-top:24px;">
-                        <div class="business-hours">
-                            <div class="contact-card__header">Business Hours</div>
-                            <div class="hours-row">
-                                <span class="hours-row__day">Monday – Saturday</span>
-                                <span class="hours-row__time">9:00 AM – 7:00 PM</span>
-                            </div>
-                            <div class="hours-row">
-                                <span class="hours-row__day">Sunday</span>
-                                <span class="hours-row__time">10:00 AM – 5:00 PM</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-top:24px;">
-                        <div class="section-label" style="margin-bottom:12px;">Legal Information</div>
-                        <div class="legal-grid" id="legal-grid"></div>
-                    </div>
+
                 </div>
 
                 <!-- Map & Quick CTA -->
@@ -495,21 +429,13 @@
                         <div class="map-card__embed" id="map-embed"></div>
                         <div class="map-card__footer" id="map-footer"></div>
                     </div>
-                    <div
-                        style="margin-top:24px;background:linear-gradient(135deg,#1a0a0a,#0f0f0f);border:1px solid rgba(215,25,32,0.2);border-radius:var(--card-radius);padding:28px 24px;">
+                    <div class="quick-enquiry-panel">
                         <div class="section-label">Quick Enquiry</div>
-                        <div
-                            style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;letter-spacing:1px;margin-bottom:12px;color:#FFFFFF;">
-                            Have A Question?</div>
-                        <p style="font-size:0.875rem;color:#CBD5E1;margin-bottom:20px;line-height:1.65;">
-                            Message us on WhatsApp for the fastest response — whether it's about products, services, or
-                            booking a Car Spa.
-                        </p>
-                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                            <a id="quick-whatsapp-products" href="#" class="btn btn--whatsapp btn--sm">Products
-                                Enquiry</a>
-                            <a id="quick-whatsapp-services" href="#" class="btn btn--whatsapp btn--sm">Services
-                                Enquiry</a>
+                        <div class="quick-enquiry-title">Have A Question?</div>
+                        <p>Message us on WhatsApp for the fastest response — whether it's about products, services, or booking a Car Spa.</p>
+                        <div class="quick-enquiry-btns">
+                            <a id="quick-whatsapp-products" href="#" class="btn btn--whatsapp btn--sm">Products Enquiry</a>
+                            <a id="quick-whatsapp-services" href="#" class="btn btn--whatsapp btn--sm">Services Enquiry</a>
                         </div>
                     </div>
                 </div>
@@ -581,7 +507,6 @@
             </div>
             <div class="footer__bottom">
                 <div class="footer__copyright" id="footer-copyright"></div>
-                <div class="footer__gst" id="footer-gst"></div>
             </div>
         </div>
     </footer>
@@ -618,7 +543,6 @@
             const contactItems = [
                 { iconName: 'phone', label: 'Phone', value: `<a href="${callUrl()}">${SITE_CONFIG.phoneDisplay}</a>`, sub: 'Call or WhatsApp' },
                 { iconName: 'chat', label: 'WhatsApp', value: `<a href="${whatsappUrl(SITE_CONFIG.waMessages.general)}" target="_blank" rel="noopener">${SITE_CONFIG.phoneDisplay}</a>`, sub: 'Fastest response' },
-                { iconName: 'email', label: 'Email', value: `<a href="mailto:${SITE_CONFIG.email}">${SITE_CONFIG.email}</a>`, sub: 'We reply within 24 hours' },
                 { iconName: 'location', label: 'Address', value: `${SITE_CONFIG.addressLine1},<br>${SITE_CONFIG.addressLine2},<br>${SITE_CONFIG.addressLine3}`, sub: '' },
                 { iconName: 'globe', label: 'Website', value: `<a href="https://${SITE_CONFIG.website}" target="_blank" rel="noopener">${SITE_CONFIG.website}</a>`, sub: '' },
             ];
@@ -636,12 +560,7 @@
             `;
             });
 
-            // ---- LEGAL ----
-            document.getElementById('legal-grid').innerHTML = `
-            <div class="legal-item"><div class="legal-item__label">GST Number</div><div class="legal-item__value">${SITE_CONFIG.gst}</div></div>
-            <div class="legal-item"><div class="legal-item__label">Business Name</div><div class="legal-item__value">${SITE_CONFIG.detailingName}</div></div>
-            <div class="legal-item"><div class="legal-item__label">Brand</div><div class="legal-item__value">${SITE_CONFIG.businessName}</div></div>
-        `;
+
 
             // ---- MAP ----
             const mapEl = document.getElementById('map-embed');
@@ -680,7 +599,6 @@
             <div class="footer__contact-item">${icon('location', '16px')}<span>${SITE_CONFIG.address.replace(/\n/g, ', ')}</span></div>
         `;
             document.getElementById('footer-copyright').textContent = `© ${new Date().getFullYear()} 4M Autotech. All rights reserved.`;
-            document.getElementById('footer-gst').textContent = `GST: ${SITE_CONFIG.gst}`;
         })();
     </script>
 </body>
