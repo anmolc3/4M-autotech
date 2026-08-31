@@ -81,7 +81,7 @@
                 <div class="nav__mobile-sub" id="mob-products-sub">
                     <div class="nav__mobile-group-title">Categories</div>
                     <div class="nav__mobile-links">
-                        <a href="products.html" class="nav__mobile-sublink">All Products</a>
+                        <a href="products.html" class="nav__mobile-sublink">All Products (28)</a>
                         <a href="products.html?category=car-care" class="nav__mobile-sublink">Car Care Range</a>
                         <a href="products.html?category=bike-care" class="nav__mobile-sublink">Bike Care Range</a>
                         <a href="products.html?category=exterior-care" class="nav__mobile-sublink">Exterior Care</a>
@@ -207,8 +207,9 @@
                 </svg>
             </button>
             <div class="modal__grid">
-                <div class="modal__image">
-                    <img id="modal-img" src="" alt="">
+                <div class="modal__image" id="modal-img-container">
+                    <img id="modal-img" src="assets/images/products/tyre-polish.webp" alt="Product Image" style="display:none;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div id="modal-img-placeholder" class="product-card__image-placeholder" style="display:flex;width:100%;height:100%;align-items:center;justify-content:center;font-size:2.5rem;">4M</div>
                 </div>
                 <div class="modal__content">
                     <div>
@@ -216,8 +217,9 @@
                         <div class="modal__name" id="modal-product-name"></div>
                         <div class="modal__subtitle" id="modal-subtitle"></div>
                         <div class="modal__tagline" id="modal-tagline"></div>
-                        <span class="modal__size-badge" id="modal-size"
-                            style="margin-top:10px;display:inline-block;"></span>
+                        <div style="margin-top:12px;">
+                            <span class="modal__size-badge" id="modal-size"></span>
+                        </div>
                     </div>
                     <div class="modal__desc" id="modal-desc"></div>
                     <div>
@@ -229,14 +231,14 @@
                         <div class="modal__steps" id="modal-steps"></div>
                     </div>
                     <div class="modal__actions">
-                        <a id="modal-whatsapp" href="#" class="btn btn--whatsapp btn--sm">
+                        <a id="modal-whatsapp" href="https://wa.me/919999746003" class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
                             <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
                             WhatsApp Enquiry
                         </a>
-                        <a id="modal-call" href="#" class="btn btn--outline btn--sm">
+                        <a id="modal-call" href="tel:+919999746003" class="btn btn--outline btn--sm">
                             <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -259,14 +261,14 @@
                     <div class="cta-strip__title">Need Help Choosing<br>The Right Product?</div>
                 </div>
                 <div class="cta-strip__actions">
-                    <a id="cta-whatsapp" href="#" class="btn btn--whatsapp">
+                    <a id="cta-whatsapp" href="https://wa.me/919999746003" class="btn btn--whatsapp">
                         <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                         </svg>
                         WhatsApp Us
                     </a>
-                    <a id="cta-call" href="#" class="btn"
+                    <a id="cta-call" href="tel:+919999746003" class="btn"
                         style="background:#fff;color:#D71920;font-family:var(--font-heading);font-weight:600;letter-spacing:2px;gap:8px;">
                         <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -288,7 +290,7 @@
                     <a href="index.html" class="footer__logo-link" aria-label="4M Autotech Home">
                         <img src="assets/logo.svg" alt="4M Autotech Logo" class="footer__logo-img">
                     </a>
-                    <span class="footer__logo-sub">Khawaja Garib Nawaz Car Detailing</span>
+                    <span class="footer__logo-sub">A Khawaja Garib Nawaz Car Detailing Brand</span>
                     <p class="footer__tagline">Premium car care products and professional detailing services.</p>
                 </div>
                 <div>
@@ -313,6 +315,11 @@
             </div>
             <div class="footer__bottom">
                 <div class="footer__copyright" id="footer-copyright"></div>
+                <div class="footer__legal-links">
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+                    <span class="footer__legal-sep">•</span>
+                    <a href="terms.html" class="footer__legal-link">Terms &amp; Conditions</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -438,8 +445,19 @@
                 document.getElementById('modal-tagline').textContent = p.tagline;
                 document.getElementById('modal-size').textContent = p.size || '';
                 const img = document.getElementById('modal-img');
-                img.src = p.image;
-                img.alt = p.name;
+                const placeholder = document.getElementById('modal-img-placeholder');
+                if (p.image) {
+                    img.src = p.image;
+                    img.alt = p.name;
+                    img.style.display = 'block';
+                    if (placeholder) placeholder.style.display = 'none';
+                } else {
+                    img.style.display = 'none';
+                    if (placeholder) {
+                        placeholder.style.display = 'flex';
+                        placeholder.textContent = p.name.substring(0, 2).toUpperCase();
+                    }
+                }
                 document.getElementById('modal-desc').textContent = p.description;
                 document.getElementById('modal-benefits').innerHTML = p.benefits.map(b => `<div class="modal__benefit">${b}</div>`).join('');
                 document.getElementById('modal-steps').innerHTML = p.howToUse.map((s, i) => `
@@ -499,6 +517,12 @@
                     }
                 });
             });
+
+            // CTA Links
+            const ctaWa = document.getElementById('cta-whatsapp');
+            if (ctaWa) ctaWa.href = whatsappUrl(SITE_CONFIG.waMessages.general);
+            const ctaPh = document.getElementById('cta-call');
+            if (ctaPh) ctaPh.href = callUrl();
 
             // ---- FOOTER ----
             SERVICES.forEach(s => {

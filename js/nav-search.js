@@ -96,7 +96,7 @@
                     currentItems.push({ type: 'product', url: itemUrl, data: p });
                     const isBike = p.id.startsWith('bike-') || (p.category && p.category.includes('bike-care'));
                     const badge = isBike ? 'Bike Care' : 'Car Care';
-                    const priceHtml = p.mrp ? `<span class="nav-search-item-price">${escapeHtml(p.mrp)}</span>` : (p.size ? `<span class="nav-search-item-size">${escapeHtml(p.size)}</span>` : '');
+                    const badgeSizeHtml = p.size ? `<span class="nav-search-item-size">${escapeHtml(p.size)}</span>` : '';
 
                     html += `
                         <a href="${itemUrl}" class="nav-search-item" data-index="${currentItems.length - 1}">
@@ -113,7 +113,7 @@
                                 </div>
                                 <div class="nav-search-item-desc">${highlightMatch(p.subtitle || p.categoryLabel || '', query)}</div>
                             </div>
-                            ${priceHtml}
+                            ${badgeSizeHtml}
                         </a>
                     `;
                 });

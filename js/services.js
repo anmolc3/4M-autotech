@@ -10,6 +10,7 @@ const SERVICES = [
         icon: "✦",
         shortDesc: "Professional machine polishing to remove swirl marks, scratches, oxidation and restore your paint's true depth and gloss.",
         description: "Our professional paint correction service uses multi-stage machine polishing to systematically remove paint defects including swirl marks, light scratches, water spots, oxidation and holograms. The result is paint that reflects like a mirror and glows with true depth.",
+        price: "Starting from ₹2,499",
         features: [
             "Multi-stage machine polishing",
             "Swirl mark & scratch removal",
@@ -29,6 +30,7 @@ const SERVICES = [
         icon: "◈",
         shortDesc: "Professional-grade ceramic coating that bonds to your paint for years of protection, gloss and hydrophobic performance.",
         description: "Ceramic coating creates a permanent semi-permanent glass-like shield over your vehicle's paint. It delivers extreme hydrophobic properties, UV protection, chemical resistance and unmatched depth of gloss that lasts for years.",
+        price: "Starting from ₹7,999",
         features: [
             "9H hardness ceramic formula",
             "Hydrophobic self-cleaning surface",
@@ -48,6 +50,7 @@ const SERVICES = [
         icon: "⬡",
         shortDesc: "Self-healing transparent film that protects your paint from rock chips, scratches, and road debris.",
         description: "Paint Protection Film (PPF) is a virtually invisible urethane film that physically protects your vehicle's paint from stone chips, scratches, bug splatter and road hazards. Modern PPF features self-healing technology that makes minor scratches disappear with heat.",
+        price: "From ₹14,999 / Custom Quote",
         features: [
             "Self-healing urethane film",
             "Protection from stone chips & scratches",
@@ -67,6 +70,7 @@ const SERVICES = [
         icon: "⬙",
         shortDesc: "Deep interior cleaning and sanitization — seats, carpets, dashboard, panels, roof lining and all surfaces.",
         description: "Our comprehensive interior cleaning service covers every surface inside your vehicle. From deep seat and carpet extraction to dashboard detailing, glass polishing and full sanitization — your interior will feel and smell showroom fresh.",
+        price: "Starting from ₹999",
         features: [
             "Deep vacuum & extraction",
             "Seat & carpet deep cleaning",
@@ -87,6 +91,7 @@ const SERVICES = [
         icon: "◉",
         shortDesc: "Complete exterior wash, clay bar decontamination, polish, wax and tyre dressing for a showroom finish.",
         description: "Our exterior detailing package goes far beyond a simple wash. We foam wash, clay bar decontaminate, polish, apply wax or sealant, dress tyres and clean all exterior glass for a complete showroom-quality exterior finish.",
+        price: "Starting from ₹1,299",
         features: [
             "High-foam pressure wash",
             "Clay bar decontamination",
@@ -107,6 +112,7 @@ const SERVICES = [
         icon: "⚙",
         shortDesc: "Safe and effective engine bay cleaning and dressing for a clean, fresh underhood appearance.",
         description: "Our engine bay cleaning service safely removes grease, grime, dust and road contamination from your engine compartment. We degrease, rinse, dry and dress all plastic and rubber components for a clean, professional underhood finish.",
+        price: "Starting from ₹499",
         features: [
             "Safe engine degreasing",
             "Pressure rinse",
@@ -126,6 +132,7 @@ const SERVICES = [
         icon: "★",
         shortDesc: "The ultimate full detailing package — complete exterior, interior, paint protection, engine bay, and final quality finish.",
         description: "The Car Spa is our ultimate, all-inclusive detailing package that gives your car a complete showroom finish inside and out. Every surface, every panel, every interior element is professionally detailed to the highest standard.",
+        price: "Starting from ₹1,499",
         features: [
             "Complete exterior foam wash",
             "Decontamination & clay bar",
@@ -164,6 +171,7 @@ const CAR_SPA_PACKAGE = {
     name: "Car Spa",
     headline: "FULL DETAILING PACKAGE",
     tagline: "COMPLETE CARE • DEEP CLEAN • PREMIUM FINISH",
+    price: "Starting from ₹1,499",
     description: "The ultimate detailing package that gives your car a showroom finish inside & out.",
     sections: [
         {

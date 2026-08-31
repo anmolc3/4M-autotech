@@ -7,17 +7,21 @@ const SITE_CONFIG = {
     // Business
     businessName: "4M AUTOTECH",
     detailingName: "Khawaja Garib Nawaz Car Detailing",
+    brandTagline: "A Khawaja Garib Nawaz Car Detailing Brand",
     tagline: "CARE TODAY • PERFORMANCE TOMORROW",
 
     // Contact
     phone: "+919999746003",
     phoneDisplay: "+91 9999746003",
-    whatsapp: "+919999746003",
+    whatsapp: "919999746003",
     email: "info@khawajagaribnawaz.com",          // primary (used in footers)
     emails: [
-        { label: "General Enquiries",  address: "info@khawajagaribnawaz.com" },
-        { label: "Administration",     address: "admin@khawajagaribnawaz.com" },
-        { label: "Sales Manager",      address: "salemanager@khawajagaribnawaz.com" }
+        "Info@khawajagaribnawaz.com",
+        "Admin@khawajagaribnawaz.com",
+        "Salemanger@khawajagaribnawaz.com",
+        "gm@khawajagaribnawaz.com",
+        "marketingmanager@khawajagaribnawaz.com",
+        "saleadviser@khawajagaribnawaz.com"
     ],
 
     // Address
@@ -29,10 +33,9 @@ const SITE_CONFIG = {
     // Legal
     website: "www.khawajagaribnawazcardetailing.com",
 
-    // Google Maps — insert your embed URL here
-    // Example: "https://www.google.com/maps/embed?pb=..."
+    // Google Maps Embed & URL
     googleMapsUrl: "https://www.google.com/maps?q=Gautampuri+Badarpur+New+Delhi+110044",
-    googleMapsEmbed: "", // Paste full embed iframe src here
+    googleMapsEmbed: "https://maps.google.com/maps?q=H.+No.+820,+Block+B,+Phase+2,+Gautampuri,+Badarpur,+New+Delhi+-+110044&t=&z=15&ie=UTF8&iwloc=&output=embed",
 
     // Social Media — insert actual profile URLs when available
     facebook: "",   // e.g. "https://www.facebook.com/yourpage"
@@ -51,10 +54,15 @@ const SITE_CONFIG = {
 
 // Helper: build WhatsApp URL
 function whatsappUrl(message) {
-    return `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(message)}`;
+    const cleanNumber = (SITE_CONFIG.whatsapp || "919999746003").replace(/[^0-9]/g, '');
+    if (message) {
+        return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
+    }
+    return `https://wa.me/${cleanNumber}`;
 }
 
 // Helper: build call URL
 function callUrl() {
     return `tel:${SITE_CONFIG.phone}`;
 }
+

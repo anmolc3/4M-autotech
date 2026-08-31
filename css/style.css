@@ -2591,6 +2591,28 @@ button {
     color: #64748B;
 }
 
+.footer__legal-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer__legal-link {
+    font-size: 0.8rem;
+    color: #64748B;
+    transition: color var(--transition);
+}
+
+.footer__legal-link:hover {
+    color: #FFFFFF;
+}
+
+.footer__legal-sep {
+    color: #334155;
+    font-size: 0.8rem;
+}
+
 .footer__gst {
     font-size: 0.75rem;
     color: #64748B;
